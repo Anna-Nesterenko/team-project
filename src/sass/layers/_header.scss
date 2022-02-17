@@ -1,0 +1,78 @@
+.page-header {
+  background-color: #ffb8ca;
+  margin-bottom: 27px;
+}
+
+.page-header__container {
+  background-color: #ffb8ca;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  background-color: #ffb8ca;
+}
+
+.title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 110px;
+}
+
+.title__wrap {
+  color: #d41443;
+  font-size: 48px;
+}
+
+.hero__wrap-btn {
+  display: flex;
+  margin-top: 19px;
+}
+
+.hero__btn {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: #ffffff;
+  color: #d41443;
+  border-radius: 20px;
+  min-height: 24px;
+  padding-left: 13px;
+  padding-right: 13px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.hero__btn--active {
+  background-color: #d41443;
+  color: #ffffff;
+}
+
+// .eclipse-wrap {
+//   background-color: inherit;
+//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/mobile/hero-1-320.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   padding-top: 118px;
+//   padding-bottom: 118px;
+//   text-align: center;
+// }
