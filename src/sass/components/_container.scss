@@ -5,15 +5,15 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @include mob {
+    width: 310px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @include tab {
+    width: 630px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @include desk {
+    width: 1080px;
   }
 }
