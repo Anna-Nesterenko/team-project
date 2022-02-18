@@ -1,14 +1,14 @@
 .pruducts__section{
-    box-sizing: border-box;
     margin: 0 auto;
+}
+
+.products__list{
+    display: flex;
+    justify-content: space-between;
 }
 
 .pruducts__item{
     width: 280;
-    margin: 0 auto;
-    margin: 0 auto;
-
-
 }
 
 .products__button{
