@@ -1,7 +1,24 @@
 .pruducts__section{
+    box-sizing: border-box;
     margin: 0 auto;
+}
+
+.pruducts__item{
+    width: 280;
+    margin: 0 auto;
+    margin: 0 auto;
+
+
 }
 
 .products__button{
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 0 auto;
+
+}
+.button__imgage{
+    display: none;
 }
