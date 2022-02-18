@@ -4,11 +4,12 @@
 
 .products__list{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .pruducts__item{
-    width: 280;
+    width: 280px;
 }
 
 .products__button{
