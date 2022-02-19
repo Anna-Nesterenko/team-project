@@ -10,6 +10,7 @@
   }
 }
 .section-contacts {
+  position: absolute;
   background-color: $accentColorSection;
 }
 .nav-title {
@@ -90,4 +91,38 @@ p {
   font-size: 12px;
   line-height: 150%;
   color: $secondColorText;
+}
+.btn-oval-contacts {
+  position: relative;
+  width: 161.44px;
+  height: 44px;
+  background-color: $accentColor;
+  // display: inline-block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 22px;
+  border: transparent;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $whiteColorText;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.btn-oval-franchise {
+  position: relative;
+  width: 161.44px;
+  height: 44px;
+  background-color: $whiteColorText;
+  // display: inline-block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 22px;
+  border: transparent;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $accentColor;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 113px;
 }
