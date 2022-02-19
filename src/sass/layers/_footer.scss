@@ -1,0 +1,117 @@
+.footer {
+  max-width: 1600px;
+  background: $accentColorSection;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer__title-box {
+  max-width: 234px;
+  margin-bottom: 43px;
+  text-align: start;
+
+  @include tab {
+    min-width: 340px;
+  }
+
+  @include desk {
+    max-width: 474px;
+  }
+}
+
+.container--footer-flex {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.footer__title-first {
+  margin-bottom: 17px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $brightPink;
+}
+
+.footer__title-second {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accentColor;
+}
+
+.footer__contact-box {
+  margin-bottom: 43px;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 46px;
+}
+
+.footer-social__item:not(:first-child) {
+  margin-left: 28px;
+}
+
+.footer-social__icon {
+  width: 32px;
+  height: 32px;
+  fill: $iconColor;
+
+  &hover,
+  &focus {
+    fill: $accentColor;
+  }
+}
+
+.footer-social-tel-box {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.footer-social-tel-box__text {
+  margin-right: 3px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $mainColorText;
+}
+
+.footer-social-tel-box__link {
+  text-decoration: none;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: $accentColor;
+}
+
+.footer-copiright {
+  padding-top: 22px;
+
+  border-top: 1px solid $secondColorText;
+}
+
+.footer-copiright__text {
+  font-family: DM Sans;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+
+  color: $secondColorText;
+}
