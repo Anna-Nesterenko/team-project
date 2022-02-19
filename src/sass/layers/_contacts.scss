@@ -10,8 +10,17 @@
   }
 }
 .section-contacts {
+  padding-top: 43px;
+  padding-bottom: 113px;
   position: absolute;
-  background-color: $accentColorSection;
+  background-image: linear-gradient(
+    to bottom,
+    $whiteColorText 8%,
+    $accentColorSection 8%,
+    $accentColorSection 8%,
+    $accentColorSection 8%,
+    $accentColorSection 8%
+  );
 }
 .nav-title {
   background-color: #f0d1a5;
@@ -124,5 +133,4 @@ p {
   color: $accentColor;
   text-align: center;
   align-items: center;
-  margin-bottom: 113px;
 }
