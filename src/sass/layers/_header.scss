@@ -1,13 +1,22 @@
 .page-header {
   background-color: #ffb8ca;
+<<<<<<< Updated upstream
   height: 50px;
+=======
+  padding-top: 6px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+>>>>>>> Stashed changes
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 280px;
 }
 
 .hero {
   background-color: #ffb8ca;
+<<<<<<< Updated upstream
   position: relative;
   padding: 6px 20px 0 20px;
   min-height: 502px;
@@ -15,6 +24,24 @@
   @include tab {
     padding: 37px 34px 0 34px;
   }
+=======
+  padding-left: 20px;
+  min-height: 502px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__container {
+  display: flow-root;
+  margin-top: 27px;
+  position: relative;
+}
+
+.logo {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .title {
@@ -31,7 +58,12 @@
 
 .title__wrap {
   color: #d41443;
+<<<<<<< Updated upstream
   font-size: 47px;
+=======
+  font-size: 48px;
+  line-height: 0.9;
+>>>>>>> Stashed changes
 }
 
 .hero__wrap-btn {
@@ -73,6 +105,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 .ice-circle {
   background: #ffa5ba;
   position: absolute;
@@ -97,3 +130,29 @@
   background-color: inherit;
   padding: 0;
 }
+=======
+.circle {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+
+  margin: 9px auto 0 auto;
+  background-image: radial-gradient(circle at top, rgba(255, 165, 186, 1), rgba(255, 165, 186, 1)),
+    url(../src/images/mobile/hero-1-320.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// .eclipse-wrap {
+//   background-color: inherit;
+//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/mobile/hero-1-320.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   padding-top: 118px;
+//   padding-bottom: 118px;
+//   text-align: center;
+// }
+>>>>>>> Stashed changes
