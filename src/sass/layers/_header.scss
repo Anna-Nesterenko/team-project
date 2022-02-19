@@ -1,13 +1,6 @@
 .page-header {
   background-color: #ffb8ca;
-  margin-bottom: 27px;
-}
-
-.page-header__container {
-  background-color: #ffb8ca;
-  padding-top: 6px;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,6 +8,10 @@
 
 .hero {
   background-color: #ffb8ca;
+  position: relative;
+  padding: 6px 20px 0 20px;
+  min-height: 502px;
+  z-index: 1;
 }
 
 .title {
@@ -26,7 +23,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 110px;
+  margin-top: 137px;
 }
 
 .title__wrap {
@@ -65,14 +62,22 @@
   color: #ffffff;
 }
 
-// .eclipse-wrap {
-//   background-color: inherit;
-//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url(../images/mobile/hero-1-320.png);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   padding-top: 118px;
-//   padding-bottom: 118px;
-//   text-align: center;
-// }
+.ice-circle {
+  background: #ffa5ba;
+  position: absolute;
+  border-radius: 50%;
+  top: 46%;
+  right: 26%;
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0px 1px 0px 150px #ffa5ba;
+  z-index: -1;
+}
+
+.hero__img {
+  background: inherit;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  z-index: -1;
+}
