@@ -1,8 +1,16 @@
+.advantages{
+    padding-top: 19px;
+    padding-bottom: 49px;
+    background-color: #FFF5F6;
+}
+
+.advantages-list{
+    &:not(:last-child){
+        margin-bottom: 15px;
+    } 
+}
 .advantages-icon{
-    width:50px;
-    height:50px;
-    // padding:25px;
-    background-color: #ffb8ca;
+    fill: #ffb8ca;
     margin-bottom: 16px;
 }
 .advantages-title{
@@ -13,8 +21,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #D41443;
-
-    // margin-bottom: ;
+    margin-bottom: 15px;
 
 }
 
@@ -23,6 +30,5 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.7;
-    color: #000000;
-    
-}
+    color: #000000;   
+}   
