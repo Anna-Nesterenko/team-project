@@ -10,11 +10,16 @@
   @include tab {
     flex-basis: calc(100% / 3 - 20px);
     margin: 10px;
-  }
-  @include tab {
+
+    padding: 50px 32px 50px 31px;
     height: 544px;
   }
+  @include desk {
+    padding: 51px 44px 62px 43px;
+    height: 572px;
+  }
 }
+
 .contacts {
   margin-bottom: 54px;
 
@@ -102,6 +107,10 @@ b {
     margin-bottom: 30px;
     font-size: 14px;
   }
+  @include desk {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 }
 p {
   font-weight: 500;
@@ -112,6 +121,10 @@ p {
   @include tab {
     margin-bottom: 30px;
     font-size: 14px;
+  }
+  @include desk {
+    margin-bottom: 64px;
+    font-size: 16px;
   }
 }
 .line {
@@ -130,6 +143,9 @@ p {
   @include tab {
     font-size: 14px;
   }
+  @include desk {
+    font-size: 16px;
+  }
 }
 
 .time-text {
@@ -143,11 +159,18 @@ p {
     margin-bottom: 16px;
     font-size: 14px;
   }
+  @include desk {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
 }
 .time-list {
   margin-bottom: 25px;
   @include tab {
     margin-bottom: 30px;
+  }
+  @include desk {
+    margin-bottom: 64px;
   }
 }
 .contacts-link {
@@ -170,7 +193,6 @@ p {
   font-size: 16px;
   line-height: 1.31;
   color: $whiteColorText;
-  // display: flex;
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
@@ -189,6 +211,9 @@ p {
     margin-right: 14.5px;
     display: inline-block;
     margin-left: 196px;
+  }
+  @include desk {
+    width: 198px;
   }
 }
 .btn-oval-franchise {
@@ -215,6 +240,9 @@ p {
     width: 191.45px;
     height: 44px;
     display: inline-block;
+  }
+  @include desk {
+    width: 180px;
   }
 }
 .send-first {
