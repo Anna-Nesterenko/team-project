@@ -96,7 +96,7 @@
     font-size: 16px;
   }
 }
-b {
+.location {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
@@ -112,7 +112,7 @@ b {
     font-size: 16px;
   }
 }
-p {
+.nav-text {
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
@@ -214,6 +214,7 @@ p {
   }
   @include desk {
     width: 198px;
+    margin-left: 330px;
   }
 }
 .btn-oval-franchise {
