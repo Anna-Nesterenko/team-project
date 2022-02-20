@@ -11,6 +11,9 @@
     flex-basis: calc(100% / 3 - 20px);
     margin: 10px;
   }
+  @include tab {
+    height: 544px;
+  }
 }
 .contacts {
   margin-bottom: 54px;
@@ -19,14 +22,14 @@
     display: flex;
     flex-wrap: wrap;
     margin: -10px;
-
     margin-bottom: 81px;
   }
 }
 .section-contacts {
+  width: 100%;
   padding-top: 43px;
   padding-bottom: 113px;
-  position: absolute;
+
   background-image: linear-gradient(
     to bottom,
     $whiteColorText 8%,
@@ -35,6 +38,16 @@
     $accentColorSection 8%,
     $accentColorSection 8%
   );
+  @include tab {
+    background-image: linear-gradient(
+      to bottom,
+      $whiteColorText 14%,
+      $accentColorSection 14%,
+      $accentColorSection 14%,
+      $accentColorSection 14%,
+      $accentColorSection 14%
+    );
+  }
 }
 .nav-title {
   background-color: #f0d1a5;
@@ -47,10 +60,15 @@
   color: $whiteColorText;
   display: flex;
   align-items: center;
-
   justify-content: center;
   letter-spacing: 0.04em;
   margin-bottom: 25px;
+  @include tab {
+    margin-bottom: 30px;
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+  }
 }
 .nav-title-second {
   background-color: #c2e297;
@@ -66,6 +84,12 @@
   justify-content: center;
   letter-spacing: 0.04em;
   margin-bottom: 25px;
+  @include tab {
+    margin-bottom: 30px;
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+  }
 }
 b {
   font-weight: 500;
@@ -74,25 +98,38 @@ b {
   letter-spacing: 0.04em;
   color: $mainColorText;
   margin-bottom: 10px;
+  @include tab {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 }
 p {
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-
   color: $secondColorText;
   margin-bottom: 25px;
+  @include tab {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 }
 .line {
   width: 100%;
   border-bottom: 1px solid $borderColorGradient;
   margin-bottom: 25px;
+  @include tab {
+    margin-bottom: 30px;
+  }
 }
 .time-title {
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
   color: $mainColorText;
+  @include tab {
+    font-size: 14px;
+  }
 }
 
 .time-text {
@@ -102,44 +139,58 @@ p {
   color: $brightPink;
 
   margin-bottom: 10px;
-  //   &:last-child {
-  //     margin-bottom: 0;
-  //   }
+  @include tab {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
 }
 .time-list {
   margin-bottom: 25px;
+  @include tab {
+    margin-bottom: 30px;
+  }
 }
 .contacts-link {
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
   color: $secondColorText;
+  @include tab {
+    font-size: 16px;
+  }
 }
+
 .btn-oval-contacts {
-  position: relative;
   width: 161.44px;
   height: 44px;
   background-color: $accentColor;
-  // display: inline-block;
-  left: 50%;
-  transform: translate(-50%, 0);
+
   border-radius: 22px;
   border: transparent;
   font-size: 16px;
   line-height: 1.31;
   color: $whiteColorText;
+  // display: flex;
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  @include tab {
+    margin-bottom: 0;
+    width: 191.45px;
+    height: 44px;
+    display: inline-block;
+    margin-right: 14.5px;
+    display: inline-block;
+    margin-left: 196px;
+  }
 }
 .btn-oval-franchise {
-  position: relative;
   width: 161.44px;
   height: 44px;
   background-color: $whiteColorText;
-  // display: inline-block;
-  left: 50%;
-  transform: translate(-50%, 0);
+
   border-radius: 22px;
   border: transparent;
   font-size: 16px;
@@ -147,6 +198,14 @@ p {
   color: $accentColor;
   text-align: center;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  @include tab {
+    margin-bottom: 0;
+    width: 191.45px;
+    height: 44px;
+    display: inline-block;
+  }
 }
 .send-first {
   margin-left: 8px;
