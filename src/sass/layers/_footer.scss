@@ -103,7 +103,7 @@
   align-items: center;
   fill: $iconColor;
   border-radius: 50%;
-  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms $timingFunction;
 
   &:hover,
   &:focus {
@@ -160,6 +160,11 @@
   @include desk {
     font-size: 16px;
     letter-spacing: 0.02em;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1, 1.2);
   }
 }
 
