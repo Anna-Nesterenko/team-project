@@ -1,10 +1,13 @@
 .section-reviews {
-  padding-bottom: 86px;
+  padding-top: 40px;
+  padding-bottom: 34px;
   @include tab {
-    padding-bottom: 119px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   @include desk {
-    padding-bottom: 132px;
+    padding-top: 62px;
+    padding-bottom: 66px;
   }
 }
 
