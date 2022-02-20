@@ -176,6 +176,11 @@ p {
   margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
+  &:hover,
+  &:focus {
+    background-color: $whiteColorText;
+    color: $accentColor;
+  }
   @include tab {
     margin-bottom: 0;
     width: 191.45px;
@@ -200,6 +205,11 @@ p {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    color: $whiteColorText;
+  }
   @include tab {
     margin-bottom: 0;
     width: 191.45px;
@@ -208,8 +218,10 @@ p {
   }
 }
 .send-first {
+  fill: $whiteColorText;
   margin-left: 8px;
 }
 .send-second {
+  fill: $accentColor;
   margin-left: 8px;
 }
