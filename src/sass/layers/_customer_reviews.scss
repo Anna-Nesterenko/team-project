@@ -18,6 +18,7 @@
 
 .slider__item {
   text-align: center;
+  text-align: center;
 }
 
 .slider-article__userfoto {
@@ -31,19 +32,23 @@
   position: relative;
   margin-bottom: 52px;
   background: #fafafa;
+  width: 280px;
+  margin: auto;
   //   z-index: 1;
-  //   text-align: center;
+  text-align: center;
   padding: 43px 50px 26px;
   @include tab {
     padding: 47px 60px 34px;
     margin-bottom: 34px;
+    width: 620px;
   }
   @include desk {
     padding: 47px 88px 39px;
+    width: 926px;
   }
 }
 .slider-article__background::after {
-  content: '';
+  content: '. . .';
   position: absolute;
   width: 100%;
   display: block;
