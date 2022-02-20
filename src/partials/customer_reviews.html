@@ -1,1 +1,115 @@
+<section class="section-reviews">
+  <div class="container swiper mySwiper">
+    <h2 class="visually-hidden">Custom_reviews</h2>
 
+    <div class="slider swiper-wrapper">
+      <div class="slider__item swiper-slide">
+        <article class="slider-article">
+          <h3 class="visually-hidden">review1</h3>
+          <picture class="slider-article__userfoto">
+            <source
+              srcset="
+                ./images/desktop/slider-1-1200.png    1x,
+                ./images/desktop/slider-1-1200@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./images/tablet/slider-1-768.png 1x, ./images/tablet/slider-1-768@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/mobile/slider-1-320.png 1x, ./images/mobile/slider-1-320@2x.png 2x"
+              media="(min-width: 320px)"
+            />
+            <img src="./images/desktop/slider-1-1200.png" alt="Emily" />
+          </picture>
+          <div class="slider-article__background">
+            <p class="slider-article__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <p class="slider-article__title">Emily, Los Angeles</p>
+        </article>
+      </div>
+
+      <div class="slider__item swiper-slide">
+        <article class="reviews-article">
+          <h3 class="visually-hidden">review2</h3>
+          <picture class="slider-article__userfoto">
+            <source
+              srcset="
+                ./images/desktop/slider-2-1200.png    1x,
+                ./images/desktop/slider-2-1200@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./images/tablet/slider-2-768.png 1x, ./images/tablet/slider-2-768@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/mobile/slider-2-320.png 1x, ./images/mobile/slider-2-320@2x.png 2x"
+              media="(min-width: 320px)"
+            />
+            <img src="./images/desktop/slider-2-1200.png" alt="Ofeliay" />
+          </picture>
+
+          <div class="slider-article__background">
+            <p class="slider-article__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <p class="slider-article__title">Ofeliay, New York</p>
+        </article>
+      </div>
+
+      <div class="slider__item swiper-slide">
+        <article class="reviews-article">
+          <h3 class="visually-hidden">review3</h3>
+          <picture class="slider-article__userfoto">
+            <source
+              srcset="
+                ./images/desktop/slider-3-1200.png    1x,
+                ./images/desktop/slider-3-1200@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./images/tablet/slider-3-768.png 1x, ./images/tablet/slider-3-768@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/mobile/slider-3-320.png 1x, ./images/mobile/slider-3-320@2x.png 2x"
+              media="(min-width: 320px)"
+            />
+            <img src="./images/desktop/slider-3-1200.png" alt="Ofeliay" />
+          </picture>
+          <div class="slider-article__background">
+            <p class="slider-article__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+          <p class="slider-article__title">Julietta, Washington</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    loop: true,
+  });
+</script>
