@@ -19,10 +19,52 @@
     padding: 37px 34px 0 34px;
     min-height: 399px;
   }
+
+  @include desk {
+    padding: 37px 97px 0 46px;
+    min-height: 665px;
+  }
 }
 
 .logo {
   fill: $accentColor;
+  @include desk {
+  }
+}
+
+.nav {
+  z-index: 2;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.nav__link {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.nav__link--active {
+  color: $accentColor;
 }
 
 .page-header__btn {
@@ -48,6 +90,11 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @include desk {
+    margin-right: 18px;
+    margin-left: 0;
+  }
 }
 
 .corner-svg {
@@ -70,6 +117,13 @@
     font-size: 22px;
     line-height: 1.13;
   }
+
+  @include desk {
+    margin-top: 84px;
+    margin-left: 69px;
+    font-size: 38px;
+    line-height: 1.15;
+  }
 }
 
 .title__wrap {
@@ -79,11 +133,18 @@
     font-size: 35px;
     line-height: 0.7;
   }
+  @include desk {
+    font-size: 60px;
+  }
 }
 
 .hero__wrap-btn {
   display: flex;
   margin-top: 19px;
+  @include desk {
+    margin-left: 69px;
+    margin-top: 25px;
+  }
 }
 
 .hero__btn {
@@ -114,6 +175,17 @@
     padding-left: 14px;
     padding-right: 14px;
   }
+
+  @include desk {
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+    padding-left: 21px;
+    padding-right: 21px;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
 }
 
 .hero__btn--active {
@@ -142,6 +214,11 @@
     -webkit-box-shadow: 0px 1px 0px 136px #ffa5ba;
     z-index: 1;
   }
+  @include desk {
+    top: 44%;
+    right: 40%;
+    -webkit-box-shadow: 0px 1px 0px 245px #ffa5ba;
+  }
 }
 
 .hero__img {
@@ -152,6 +229,9 @@
   @include tab {
     right: 32%;
     z-index: 1;
+  }
+  @include tab {
+    right: 35%;
   }
 }
 
@@ -168,6 +248,9 @@
   @media screen and (min-width: 846px) {
     background-color: inherit;
   }
+  @include desk {
+    display: none;
+  }
 }
 
 .eco-milk {
@@ -175,6 +258,10 @@
   min-height: 126px;
   display: flex;
   position: relative;
+  @include desk {
+    margin-left: 31px;
+    margin-top: 56px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -189,6 +276,11 @@
   color: #ffffff;
   margin-top: 48px;
   margin-left: -4px;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-left: 30px;
+  }
 }
 
 .arrow-right__btn {
@@ -206,14 +298,26 @@
   color: #ffffff;
   &:hover,
   &:focus {
-    background-color: #ecebeb;
     width: 25px;
     height: 25px;
+  }
+  @include desk {
+    width: 26px;
+    height: 26px;
+    bottom: 16px;
+    left: 214px;
+    &:hover,
+    &:focus {
+      width: 35px;
+      height: 35px;
+    }
   }
 }
 
 .arrow-right__icon {
   fill: $accentColor;
+  @include desk {
+  }
 }
 
 .hero__right-wrap {
@@ -224,6 +328,9 @@
   flex-direction: column;
   align-items: end;
   z-index: 1;
+  @include desk {
+    right: 110px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -239,6 +346,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  @include desk {
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
 
 .hero__right-wrap-text {
@@ -249,6 +360,10 @@
   line-height: 1.25;
   text-align: center;
   color: #ffffff;
+  @include desk {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .hero__right-wrap__link {
@@ -256,6 +371,9 @@
   margin-top: 14px;
   display: flex;
   flex-direction: column;
+  @include desk {
+    margin-top: 18px;
+  }
 }
 
 .hero__white-circle {
@@ -263,12 +381,15 @@
   right: -7px;
   top: -3px;
   z-index: -1;
+  @include desk {
+    right: -15px;
+    top: -7px;
+  }
 }
 
 .tasty-girl {
   margin-top: 68px;
+  @include desk {
+    margin-top: 109px;
+  }
 }
-
-// .hero__right-wrap__link--margin-right {
-//   margin-right: 16px;
-// }

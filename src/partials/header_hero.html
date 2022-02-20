@@ -4,6 +4,15 @@
       ><svg width="199px" height="50px">
         <use href="./images/icons.svg#icon-logo"></use></svg
     ></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="" class="nav__link nav__link--active">Home</a></li>
+        <li class="nav__item"><a href="" class="nav__link">About us</a></li>
+        <li class="nav__item"><a href="" class="nav__link">How it’s made?</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Our products</a></li>
+        <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
     <button type="button" class="mob-menu__open-btn">
       <svg width="22px" height="14px">
         <use href="./images/icons.svg#icon-menu-open"></use>
@@ -25,6 +34,10 @@
 
   <picture class="hero__img">
     <source
+      srcset="./images/desktop/hero-1-1200.png 1x, ./images/desktop/hero-1-1200@2x.png 2x"
+      media="(min-width: 1280px)"
+    />
+    <source
       srcset="./images/tablet/hero-1-768.png 1x, ./images/tablet/hero-1-768@2x.png 2x"
       media="(min-width: 768px)"
       width="143px"
@@ -40,6 +53,12 @@
   <div class="eco-milk">
     <picture class="eco-milk__img">
       <source
+        srcset="./images/desktop/hero-2-1200.png 1x, ./images/desktop/hero-2-1200@2x.png 2x"
+        media="(min-width: 1280px)"
+        min-width="px"
+        min-height="px"
+      />
+      <source
         srcset="./images/tablet/hero-2-768.png 1x, ./images/tablet/hero-2-768@2x.png 2x"
         media="(min-width: 768px)"
         min-width="124px"
@@ -54,15 +73,36 @@
       to organic farming methods.
     </p>
     <button type="button" class="arrow-right__btn">
-      <svg width="16px" height="16px" class="arrow-right__icon">
-        <use href="./images/icons.svg#icon-arrow-right"></use>
-      </svg>
+      <picture>
+        <source
+          srcset="./images/desktop/hero-arrow-d.png 1x, ./images/desktop/hero-arrow-d@2x.png 2x"
+          media="(min-width: 1280px)"
+          min-width="px"
+          min-height="px"
+        />
+        <source
+          srcset="./images/tablet/hero-arrow-t.png 1x, ./images/tablet/hero-arrow-t@2x.png 2x"
+          media="(min-width: 768px)"
+          min-width="px"
+          min-height="px"
+        />
+        <img src="./images/tablet/hero-arrow-t.png" alt="arrow right" />
+      </picture>
     </button>
   </div>
   <div class="hero__right-wrap">
     <a href="" class="hero__right-wrap__link hero__right-wrap__link--margin-right"
       ><span class="hero__right-wrap__number">16</span>
       <picture class="hero__white-circle">
+        <source
+          srcset="
+            ./images/desktop/hero-white-circle.png    1x,
+            ./images/desktop/hero-white-circle@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          min-width="px"
+          min-height="px"
+        />
         <source
           srcset="
             ./images/tablet/hero-white-circle.png    1x,
@@ -81,6 +121,15 @@
       <picture class="hero__white-circle">
         <source
           srcset="
+            ./images/desktop/hero-white-circle.png    1x,
+            ./images/desktop/hero-white-circle@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          min-width="px"
+          min-height="px"
+        />
+        <source
+          srcset="
             ./images/tablet/hero-white-circle.png    1x,
             ./images/tablet/hero-white-circle@2x.png 2x
           "
@@ -93,6 +142,12 @@
       <p class="hero__right-wrap-text">food trucks</p></a
     >
     <picture class="tasty-girl">
+      <source
+        srcset="./images/desktop/hero-3-1200.png 1x, ./images/desktop/hero-3-1200@2x.png 2x"
+        media="(min-width: 1280px)"
+        min-width="px"
+        min-height="px"
+      />
       <source
         srcset="./images/tablet/hero-3-768.png 1x, ./images/tablet/hero-3-768@2x.png 2x"
         media="(min-width: 768px)"
