@@ -22,10 +22,10 @@
 
 .contacts {
   margin-bottom: 54px;
-
   @include tab {
     display: flex;
     flex-wrap: wrap;
+
     margin: -10px;
     margin-bottom: 81px;
   }
