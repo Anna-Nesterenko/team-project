@@ -1,8 +1,68 @@
 .modal {
+<<<<<<< Updated upstream
   display: flex;
   flex-direction: column;
 }
 
 .form-field {
   padding: 10px;
+=======
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 277px;
+}
+
+.backdrop.is-hidden {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(75, 41, 49, 0.774);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.modal-button__close {
+  margin-left: auto;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 210px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding-left: 34px;
+  padding-right: 34px;
+  background-color: rgba(75, 41, 49, 0.774);
+}
+
+.modal-title {
+  font-family: Titan One, cursive;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.form-input {
+  border-radius: 4px;
+  border: 1px slid rgb(212, 20, 67);
+}
+
+.form-input__text {
+  color: rgb(255, 255, 255);
+>>>>>>> Stashed changes
 }
