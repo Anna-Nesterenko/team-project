@@ -5,11 +5,19 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
+@import './utils/placeholders';
 @import './utils/mixin';
 
 @import './base/hidden';
 @import './base/reset';
 @import './base/global';
+
+@import './components/container';
+@import './components/btn-oval';
+@import './components/mob-menu';
+@import './components/btn-circle';
+@import './components/modal';
+@import './components/social-link';
 
 @import './layers/header';
 @import './layers/hero';
@@ -20,10 +28,3 @@
 @import './layers/customer_reviews';
 @import './layers/contacts';
 @import './layers/footer';
-
-@import './components/container';
-@import './components/btn-oval';
-@import './components/mob-menu';
-@import './components/btn-circle';
-@import './components/modal';
-@import './components/social-link';

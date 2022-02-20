@@ -1,0 +1,115 @@
+.section-reviews {
+  padding-top: 40px;
+  padding-bottom: 34px;
+  @include tab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desk {
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item {
+  text-align: center;
+  text-align: center;
+}
+
+.slider-article__userfoto {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 29px;
+}
+
+.slider-article__background {
+  position: relative;
+  margin-bottom: 52px;
+  background: #fafafa;
+  width: 280px;
+  margin: auto;
+  //   z-index: 1;
+  text-align: center;
+  padding: 43px 50px 26px;
+  @include tab {
+    padding: 47px 60px 34px;
+    margin-bottom: 34px;
+    width: 620px;
+  }
+  @include desk {
+    padding: 47px 88px 39px;
+    width: 926px;
+  }
+}
+.slider-article__background::after {
+  content: '. . .';
+  position: absolute;
+  width: 100%;
+  display: block;
+  bottom: -45px;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: $accentColor;
+}
+
+.slider-article__text {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  line-height: 2.55;
+  padding-right: 12px;
+  padding-left: 12px;
+  background: repeating-linear-gradient(to top, $borderColorGradient 0 1px, transparent 1px 31px);
+
+  @include tab {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @include desk {
+    padding-right: 31px;
+    padding-left: 31px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.slider-article__title {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  //   width: 172px;
+  //   height: 25px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.86;
+  @include tab {
+    font-size: 16px;
+  }
+  @include desk {
+    font-size: 20px;
+  }
+}
+
+.swiper-pagination-bullet {
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+
+  &:first-child {
+    background-image: url();
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $accentColor;
+}
