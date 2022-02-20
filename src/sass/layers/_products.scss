@@ -1,0 +1,60 @@
+.products__section{
+    background: $whiteColorText;
+    padding: 121px 98px 15px 15px;
+    margin: 0 auto;
+}
+
+.section__sup-title{
+    color: $brightPink;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section__title{
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accentColor;
+}
+
+.products__list{
+    list-style: none;
+}
+
+.products__item{
+    position: relative;
+    width: 280px;
+    padding: 161px 39px 41px 41px;
+    border-radius: 24px;
+    &--first{
+        background-color: $cardsColorFirst;
+    }
+    &--second{
+        background-color: $cardsColorSecond;
+    }
+    &--third{
+        background-color: $cardsColorThird;
+    }
+}
+
+.products__picture{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: -77px;
+    transform: translate(-45%, -77px);
+}
+
+
+
+
