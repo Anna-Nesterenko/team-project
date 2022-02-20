@@ -32,16 +32,21 @@
     grid-gap: 2px;
     justify-content: center;
 
+    @include mob {
+        grid-template-columns: repeat(21, 18px);
+        grid-template-rows:  repeat(9, 18px);
+    }
+
     @include tab {
-        grid-template-columns: repeat(21, 25px);
-        grid-template-rows:  repeat(9, 25px);
+        grid-template-columns: repeat(21, 25.7px);
+        grid-template-rows:  repeat(9, 25.7px);
         grid-gap: 4px;
     }
 
     @include desk {
         grid-template-columns: repeat(21, 42px);
         grid-template-rows:  repeat(9, 42px);
-        grid-gap: 6px;
+        grid-gap: 6.2px;
     }
 }
 
