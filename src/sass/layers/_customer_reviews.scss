@@ -1,29 +1,25 @@
-.section__reviews {
-  padding-bottom: 86px;
+.section-reviews {
+  padding-top: 40px;
+  padding-bottom: 34px;
+  @include tab {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include desk {
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
 }
 
 .swiper {
   width: 100%;
   height: 100%;
-  outline: 1px solid blueviolet;
 }
 
 .slider__item {
   text-align: center;
+  text-align: center;
 }
-
-//   width: 100%;
-//   height: 541px;
-//   text-align: center;
-//   @include tab {
-//     min-width: 620px;
-//     max-height: 382px;
-//   }
-//   @include desk {
-//     max-width: 926px;
-//     max-height: 350px;
-//   }
-// }
 
 .slider-article__userfoto {
   display: flex;
@@ -36,14 +32,31 @@
   position: relative;
   margin-bottom: 52px;
   background: #fafafa;
+  width: 280px;
+  margin: auto;
   //   z-index: 1;
+  text-align: center;
   padding: 43px 50px 26px;
   @include tab {
     padding: 47px 60px 34px;
+    margin-bottom: 34px;
+    width: 620px;
   }
   @include desk {
     padding: 47px 88px 39px;
+    width: 926px;
   }
+}
+.slider-article__background::after {
+  content: '. . .';
+  position: absolute;
+  width: 100%;
+  display: block;
+  bottom: -45px;
+  left: 0;
+  font-size: 40px;
+  text-align: center;
+  color: $accentColor;
 }
 
 .slider-article__text {
@@ -53,6 +66,8 @@
   line-height: 2.55;
   padding-right: 12px;
   padding-left: 12px;
+  background: repeating-linear-gradient(to top, $borderColorGradient 0 1px, transparent 1px 31px);
+
   @include tab {
     padding-right: 20px;
     padding-left: 20px;
@@ -65,28 +80,23 @@
     font-size: 16px;
     line-height: 1.86;
   }
-  background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
 }
-
-// .slider__picture {
-//   display: flex;
-//   justify-content: center;
-//   border-radius: 50%;
-//   margin-bottom: 29px;
-//   width: 85px;
-//   height: 85px;
-//   outline: 1px solid red;
-// }
 
 .slider-article__title {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 172px;
-  height: 25px;
-  margin-bottom: 30px;
+  //   width: 172px;
+  //   height: 25px;
+  margin-bottom: 50px;
   font-size: 14px;
   line-height: 1.86;
+  @include tab {
+    font-size: 16px;
+  }
+  @include desk {
+    font-size: 20px;
+  }
 }
 
 .swiper-pagination-bullet {
