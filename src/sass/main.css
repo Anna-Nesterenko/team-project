@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'DM Sans', 'sans-serif';
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 630px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1080px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 22px;
+  border: transparent;
+  font-size: 16px;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-field {
+  padding: 10px;
+}
+/*# sourceMappingURL=main.css.map */

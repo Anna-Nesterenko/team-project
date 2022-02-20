@@ -1,0 +1,29 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;AGHH,AAAA,gBAAgB,CAAC;EACf,QAAQ,EAAE,QAAQ;EAClB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,IAAI,EAAE,aAAa;EACnB,SAAS,EAAE,UAAU;EACrB,MAAM,EAAE,IAAI;CACb;;ACXD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,OAAO;CAChB;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,CAAC;AACD,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACD,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV;;ACpBD,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,uBAAuB;EACpC,KAAK,EJXS,OAAO;EIYrB,gBAAgB,EJVD,OAAO;EIWtB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,MAAM;CACvB;;ACjBD,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;EAEX,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CAanB;;AJlBC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EIDrC,AAAA,UAAU,CAAC;IASP,KAAK,EAAE,KAAK;GAUf;;;AJbC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EINrC,AAAA,UAAU,CAAC;IAaP,KAAK,EAAE,KAAK;GAMf;;;AJRC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EIXtC,AAAA,UAAU,CAAC;IAiBP,KAAK,EAAE,MAAM;GAEhB;;;ACnBD,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,YAAY;EACrB,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,WAAW;EACnB,SAAS,EAAE,IAAI;CAChB;;AGLD,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CACvB;;AAED,AAAA,WAAW,CAAC;EACV,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "utils/_mixin.scss",
+        "base/_hidden.scss",
+        "base/_reset.scss",
+        "base/_global.scss",
+        "components/_container.scss",
+        "components/_btn-oval.scss",
+        "components/_mob-menu.scss",
+        "components/_btn-circle.scss",
+        "components/_modal.scss",
+        "components/_social-link.scss",
+        "layers/_header.scss",
+        "layers/_hero.scss",
+        "layers/_products.scss",
+        "layers/_about.scss",
+        "layers/_advantages.scss",
+        "layers/_gallery.scss",
+        "layers/_customer_reviews.scss",
+        "layers/_contacts.scss",
+        "layers/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
