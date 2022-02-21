@@ -65,18 +65,19 @@
                 .about_img {
                     display: block;
                     margin: 0 auto;
-                    @media screen and (min-width: 768px) {
-                        margin-right: 17px;
-                    }
-                    @media screen and (min-width: 1280px) {
-                        margin-right: 74px;
-                    }
                 }
                 
                 .about_img_cow {
                     margin-bottom: 46px;
                     margin-left: auto;
                     margin-right: auto;
+                    @media screen and (min-width: 768px) {
+                        margin-right: 17px;
+                    }
+                    @media screen and (min-width: 1280px) {
+                        margin-right: 74px;
+                        margin-bottom: 0;
+                    }
                 }
                 
                 .about_articles {
