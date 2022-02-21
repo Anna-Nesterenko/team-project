@@ -1,11 +1,25 @@
 .modal {
+<<<<<<< Updated upstream
+=======
+  position: absolute;
+>>>>>>> Stashed changes
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 554px;
   margin-left: auto;
   margin-right: auto;
+<<<<<<< Updated upstream
 
+=======
+}
+
+.modal-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .form-field {
@@ -45,7 +59,11 @@
   flex-direction: column;
   padding-left: 34px;
   padding-right: 34px;
+<<<<<<< Updated upstream
   background-color: rgba(75, 41, 49, 0.774);
+=======
+  background-color: teal;
+>>>>>>> Stashed changes
 }
 
 .modal-title {
@@ -67,3 +85,11 @@
 .form-input__text {
   color: rgb(255, 255, 255);
 }
+<<<<<<< Updated upstream
+=======
+
+.form-field__select {
+  border-radius: 4px;
+  border: 1px solid rgb(212, 20, 67);
+}
+>>>>>>> Stashed changes
