@@ -2,7 +2,7 @@
     background: $whiteColorText;
     margin: 0 auto;
     width: 100%;
-    padding: 121px 98px 0;
+    padding: 121px 0 98px;
 }
 
 .section__sup-title{
@@ -32,20 +32,25 @@
 
 .products__list{
     list-style: none;
+    margin: 0 auto;
     @include tab{
         display: flex;
 flex-direction: row;    
-justify-content: space-around;}
+justify-content: center;
+}
 }
 
 .products__item{
     position: relative;
-    margin: 0 auto;
-    width: 280px;
     padding: 161px 39px 41px 41px;
     border-radius: 24px;
+    width: 280px;
     color: $whiteColorText;
-margin-bottom: 130px;
+    margin: 0 auto;
+    &:not(:last-child){
+        margin-bottom: 130px;
+    
+    }
     &--first{
         background-color: $cardsColorFirst;
     }
@@ -56,11 +61,26 @@ margin-bottom: 130px;
         background-color: $cardsColorThird;
     }
 
+
     @include tab{
         width: 220px;
+        margin: 0;
+        &:not(:last-child){
+            margin: 0;
+            margin-right: 20px;
+        }
     }
     @include desk{
         width: 330px;
+        &:not(:last-child){
+            margin: 0;
+            margin-right: 30px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -71,6 +91,15 @@ margin-bottom: 130px;
     left: 50%;
     top: 0;
     transform: translate(-50%, -50%);
+
+
+    @include tab{
+        width: 100%;
+max-width: 220px;
+        // @media screen and (max-width: 320px) {
+        //     max-width: 100%;
+        // }    
+}
 }
 
 .products__title{
@@ -112,7 +141,7 @@ padding-bottom: 30px;
 .products__button{
     width: 40px;
     height: 40px;
-    background: $whiteColorText;
+    background-color: $whiteColorText;
     border: 0;
     border-radius: 50%;
     margin: 0 auto;
@@ -120,6 +149,14 @@ padding-bottom: 30px;
     justify-content: center;
     align-items: center;
     fill: $accentColor;
+
+    transition-property: border-color, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        background-color: $accentColor;
+        fill:$whiteColorText;
+    }
 }
 
 .button__image{
