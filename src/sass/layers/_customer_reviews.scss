@@ -127,7 +127,9 @@
   width: 12px;
 
   &:first-child {
-    //  background: url();
+    border-radius: 0;
+    background-color: #fafafa;
+    background: url(../images/icon-house.svg);
   }
 }
 
