@@ -1,5 +1,4 @@
 .footer {
-  max-width: 1600px;
   background: $accentColorSection;
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -150,8 +149,9 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
-
   color: $accentColor;
+  transition: transform 250ms $timingFunction;
+
   @include tab {
     font-size: 14px;
     line-height: 1.87;
@@ -215,6 +215,7 @@
   color: $secondColorText;
   background-color: transparent;
   cursor: pointer;
+  transition: transform 250ms $timingFunction;
 
   &:hover,
   &:focus {
