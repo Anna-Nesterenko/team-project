@@ -29,10 +29,12 @@
   margin-bottom: 54px;
   @include tab {
     display: flex;
-    flex-wrap: wrap;
-
+    // flex-wrap: wrap;
     margin: -10px;
     margin-bottom: 81px;
+  }
+  @include desk {
+    margin-bottom: 86px;
   }
 }
 .section-contacts {
@@ -57,6 +59,20 @@
       $accentColorSection 14%,
       $accentColorSection 14%
     );
+  }
+  @include desk {
+    background: url('../images/desktop/location-bg.png'),
+      linear-gradient(
+        to bottom,
+        $whiteColorText 14%,
+        $accentColorSection 14%,
+        $accentColorSection 14%,
+        $accentColorSection 14%,
+        $accentColorSection 14%
+      );
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: center;
   }
 }
 .nav-title {
