@@ -18,7 +18,8 @@
 
 <body>
     
-    <div class="backdrop is-hidden" data-modal></div>
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal-background-image">
     <div class="modal">
         <button class="button modal-button__close" data-modal-close>X
             <svg width="10" height="10">
@@ -35,7 +36,7 @@
                         <div class="form-input__wrappy">
                             <input class="form-input" type="text" name="Name" id="Name" />
                             <svg class="form-input__icon" width="10" height="10">
-                                <use href=""></use>
+                                <use href="./images/icons.svg#icon-name"></use>
                             </svg>
                         </div> 
                     </div>
@@ -101,10 +102,12 @@
                         Comment
                         <textarea name="feedback" rows="5" placeholder="Comment to the order"></textarea>
                     </label>
-                    <button class="button main-button submit-button" type="submit">Отправить</button>
+                    <button class="button submit-button" type="submit">Отправить</button>
                     </div>
 
             </form>
+    </div>
+    </div>
     </div>
   
     <script src="./modal.js"></script>
