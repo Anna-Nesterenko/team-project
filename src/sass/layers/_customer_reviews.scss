@@ -127,10 +127,14 @@
   width: 12px;
 
   &:first-child {
-    //  background: url();
+    background: url();
   }
 }
 
 .swiper-pagination-bullet-active {
   background-color: $accentColor;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 0;
+  margin-right: 18px;
 }
