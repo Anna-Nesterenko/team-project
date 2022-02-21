@@ -1,6 +1,5 @@
 .modal {
   position: absolute;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -12,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 30px 20px;
-  z-index: 10000000000000;
+  z-index: 100000000000000000000000;
   opacity: 0.7;
 }
 
@@ -36,7 +35,7 @@
   background-image: url();
 }
 
-.backdrop.is-hidden {
+.backdrop {
   width: 100vw;
   height: 100vh;
   background-color: rgba(75, 41, 49, 0.774);
@@ -47,13 +46,15 @@
   pointer-events: auto;
 }
 
-.is-hiden {
+.is-hidden {
   pointer-events: none;
   visibility: hidden;
-  opacity: -0.5;
+  opacity: 0;
 }
 
 .modal-button__close {
+  width: 30px;
+  height: 30px;
   margin-left: auto;
   margin-top: auto;
   background-color: rgba(139, 3, 30, 0.5);
