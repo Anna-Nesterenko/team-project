@@ -1,6 +1,8 @@
 .products__section{
     background: $whiteColorText;
     margin: 0 auto;
+    width: 100%;
+    padding: 121px 98px 0;
 }
 
 .section__sup-title{
@@ -30,9 +32,10 @@
 
 .products__list{
     list-style: none;
-//     @include tab{
-//         display: flex;
-// flex-direction: row;    }
+    @include tab{
+        display: flex;
+flex-direction: row;    
+justify-content: space-around;}
 }
 
 .products__item{
@@ -51,6 +54,13 @@ margin-bottom: 130px;
     }
     &--third{
         background-color: $cardsColorThird;
+    }
+
+    @include tab{
+        width: 220px;
+    }
+    @include desk{
+        width: 330px;
     }
 }
 
@@ -110,4 +120,8 @@ padding-bottom: 30px;
     justify-content: center;
     align-items: center;
     fill: $accentColor;
+}
+
+.button__image{
+    height: 40px;
 }
