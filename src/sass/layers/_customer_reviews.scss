@@ -16,8 +16,11 @@
   height: 100%;
 }
 
+.slider-article {
+  margin-bottom: 52px;
+}
+
 .slider__item {
-  text-align: center;
   text-align: center;
 }
 
@@ -30,7 +33,6 @@
 
 .slider-article__background {
   position: relative;
-  margin-bottom: 52px;
   background: #fafafa;
   width: 280px;
   margin: auto;
@@ -47,10 +49,14 @@
     width: 926px;
   }
 }
+.slider-article__background::before {
+  background: url();
+}
 .slider-article__background::after {
-  content: '. . .';
+  content: '. . . ';
   position: absolute;
   width: 100%;
+  //   background: url('../../src/images/icons/products-dots.png');
   display: block;
   bottom: -45px;
   left: 0;
@@ -88,7 +94,7 @@
   margin-left: auto;
   //   width: 172px;
   //   height: 25px;
-  margin-bottom: 50px;
+  margin-top: 52px;
   font-size: 14px;
   line-height: 1.86;
   @include tab {
@@ -106,7 +112,7 @@
   width: 12px;
 
   &:first-child {
-    background-image: url();
+    //  background: url();
   }
 }
 
