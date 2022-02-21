@@ -61,36 +61,23 @@ body {
 
 .container {
   width: 100%;
-<<<<<<< Updated upstream
-  padding-left: 15px;
-  padding-right: 15px;
-=======
   padding-left: 10px;
   padding-right: 10px;
->>>>>>> Stashed changes
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-<<<<<<< Updated upstream
-    width: 310px;
-=======
     width: 480px;
     padding-left: 15px;
     padding-right: 15px;
->>>>>>> Stashed changes
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-<<<<<<< Updated upstream
-    width: 630px;
-=======
     width: 730px;
->>>>>>> Stashed changes
   }
 }
 
@@ -108,10 +95,6 @@ body {
 }
 
 .modal {
-<<<<<<< Updated upstream
-=======
-  position: absolute;
->>>>>>> Stashed changes
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,12 +102,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< Updated upstream
 }
 
 .form-field {
   padding: 10px;
-=======
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -236,21 +225,12 @@ body {
           justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
-  .gallery {
-    -ms-grid-columns: (18px)[21];
-        grid-template-columns: repeat(21, 18px);
-    -ms-grid-rows: (18px)[9];
-        grid-template-rows: repeat(9, 18px);
-  }
-}
-
 @media screen and (min-width: 768px) {
   .gallery {
-    -ms-grid-columns: (25.7px)[21];
-        grid-template-columns: repeat(21, 25.7px);
-    -ms-grid-rows: (25.7px)[9];
-        grid-template-rows: repeat(9, 25.7px);
+    -ms-grid-columns: (25px)[21];
+        grid-template-columns: repeat(21, 25px);
+    -ms-grid-rows: (25px)[9];
+        grid-template-rows: repeat(9, 25px);
     grid-gap: 4px;
   }
 }
@@ -261,7 +241,7 @@ body {
         grid-template-columns: repeat(21, 42px);
     -ms-grid-rows: (42px)[9];
         grid-template-rows: repeat(9, 42px);
-    grid-gap: 6.2px;
+    grid-gap: 6px;
   }
 }
 
@@ -812,6 +792,5 @@ body {
     line-height: 1.86;
     letter-spacing: 0.02em;
   }
->>>>>>> Stashed changes
 }
 /*# sourceMappingURL=main.css.map */
