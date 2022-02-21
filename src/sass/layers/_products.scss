@@ -3,6 +3,15 @@
     margin: 0 auto;
     width: 100%;
     padding: 121px 0 98px;
+text-align: center;
+
+    @include tab{
+        padding: 122px 0 112px;
+    }
+
+    @include desk{
+        padding: 127px 0 119px;
+        }
 }
 
 .section__sup-title{
@@ -15,6 +24,16 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
+    
+    @include tab{
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    @include desk{
+        font-size: 30px;
+        line-height: 34px;
+        }
 }
 
 .section__title{
@@ -28,6 +47,19 @@
     text-transform: uppercase;
     color: $accentColor;
     margin-bottom: 144px;
+
+    @include tab{
+        font-size: 48px;
+        line-height: 55px;
+        margin-bottom: 150px;
+        }
+    
+    @include desk{
+        font-size: 58px;
+        line-height: 66px;
+        margin-bottom: 259px;
+
+    }
 }
 
 .products__list{
@@ -41,8 +73,10 @@ justify-content: center;
 }
 
 .products__item{
+
+    //(padding-top, padding-right, padding-bottom, padding-left)
     position: relative;
-    padding: 161px 39px 41px 41px;
+    padding: 161px 41px 41px 41px;
     border-radius: 24px;
     width: 280px;
     color: $whiteColorText;
@@ -65,6 +99,7 @@ justify-content: center;
     @include tab{
         width: 220px;
         margin: 0;
+        padding: 152px 11px 40px 11px;
         &:not(:last-child){
             margin: 0;
             margin-right: 20px;
@@ -72,6 +107,8 @@ justify-content: center;
     }
     @include desk{
         width: 330px;
+        padding: 163px 44px 50px 44px;
+
         &:not(:last-child){
             margin: 0;
             margin-right: 30px;
@@ -111,6 +148,12 @@ line-height: 23px;
 text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
+
+
+@include desk{
+    font-size: 30px;
+    line-height: 34px;    
+}
 }
 
 .dots{
@@ -123,6 +166,10 @@ text-align: center;
 letter-spacing: 0.04em;
 padding: 30px 0;
 
+@include desk{
+    padding: 32px 0;
+
+}
 // left: 147px;
 // top: 1053px;
 }
@@ -136,6 +183,20 @@ line-height: 152%;
 text-align: center;
 letter-spacing: 0.04em;
 padding-bottom: 30px;
+
+@include tab{
+    font-size: 14px;
+    line-height: 176%;
+    padding-bottom: 40px;
+
+}
+
+@include desk{
+    font-size: 16px;
+    line-height: 176%;    
+    padding-bottom: 62px;
+
+}
 }
 
 .products__button{
