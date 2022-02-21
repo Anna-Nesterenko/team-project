@@ -1,0 +1,148 @@
+            .about {
+                background-color: #FFF5F6;
+                padding-top: 125px;
+                padding-bottom: 19px;
+                @media screen and (min-width: 768px) {
+                    padding-top: 130px;
+                    padding-bottom: 33px;
+                }
+                @media screen and (min-width: 1280px) {
+                    padding-top: 125px;
+                    padding-bottom: 19px;
+                }
+            }
+            
+            .about_text {
+                font-family: Titan One;
+                font-size: 18px;
+                line-height: calc(21 /18);
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFA5BA;
+                margin-bottom: 15px;
+                @media screen and (min-width: 768px) {
+                    font-size: 26px;
+                    line-height: calc(30 /26);
+                }
+                @media screen and (min-width: 1280px) {
+                    font-size: 30px;
+                    line-height: calc(34 /30);
+                }
+            }
+            
+            .about_title {
+                font-family: Titan One;
+                font-size: 34px;
+                line-height: calc(39 /34);
+                text-align: center;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #D41443;
+                margin-bottom: 26px;
+                margin-top: 0;
+                @media screen and (min-width: 768px) {
+                    font-size: 48px;
+                    line-height: calc(55 / 48);
+                    margin-bottom: 50px;
+                }
+                @media screen and (min-width: 1280px) {
+                    font-size: 58px;
+                    line-height: calc(66 /58);
+                    letter-spacing: 0.06em;
+                    margin-bottom: 55px;
+                }
+            }
+            
+            .about_wrap {
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                }
+                //  @media screen and (min-width: 1200px) {
+                //      background-image: url(images/desktop/features-2-1200.png);
+                //  }
+            }
+            
+            .about_img {
+                display: block;
+                margin: 0 auto;
+                @media screen and (min-width: 768px) {
+                    margin-right: 17px;
+                }
+                @media screen and (min-width: 1280px) {
+                    margin-right: 74px;
+                }
+            }
+            
+            .about_img_cow {
+                margin-bottom: 46px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .about_articles {
+                width: 220px;
+                margin-left: auto;
+                margin-right: auto;
+                @media screen and (min-width: 768px) {
+                    width: 340px;
+                    padding: 0;
+                    margin-bottom: 62px;
+                    margin-left: 0;
+                }
+                @media screen and (min-width: 1280px) {
+                    width: 463px;
+                    margin-bottom: 0;
+                }
+            }
+            
+            .about_article {
+                color: #907E82;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: calc(19 / 12);
+                margin-bottom: 47px;
+                @media screen and (min-width: 768px) {
+                    font-size: 14px;
+                    line-height: calc(25 / 14);
+                }
+            }
+            
+            .item-2 {
+                margin-bottom: 10px;
+            }
+            
+            .item-3 {
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 62px;
+                }
+                @media screen and (min-width: 1280px) {
+                    margin-bottom: 45px;
+                }
+            }
+            
+            .black {
+                color: #000000;
+                margin-bottom: 47px;
+                @media screen and (min-width: 1280px) {
+                    font-size: 16px;
+                    line-height: 176%;
+                }
+            }
+            
+            .about_btn {
+                display: block;
+                margin: 0 auto;
+                padding: 0;
+                background-color: #ffffff;
+                border-color: transparent;
+                border-radius: 22px;
+                width: 176px;
+                height: 44px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: calc(18 / 14);
+                color: #D41443;
+                @media screen and (min-width: 768px) {
+                    margin: 0;
+                }
+            }
