@@ -93,26 +93,127 @@ justify-content: center;
     
     &::before{
         content: "";
-        background: url("../images/mobile/products-1-320.png") no-repeat 50%;
-        z-index: 1;
         width: 100%;
-        max-width: 249px;
         height: 252px;
-        // height: auto; //height: 335px;
         position: absolute;
         left: 50%;
-        top: -50%;
+        top: -130px;
         transform: translate(-50%, 0);
+        background-size: contain;
+        @include tab{
+            height: 226px;
+        }
+        @include desk{
+            height: 335px;
+        }
     }
+
+
 
     &:first-child{
         background-color: $cardsColorFirst;
+        &::before{
+            @include desk{
+                background: url("../images/desktop/products-1-1200.png") no-repeat 50%;
+                background-size: contain;
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background: url("../images/desktop/products-1-1200@2x.png") no-repeat 50%;
+                    background-size: contain;
+
+                }
+            }
+
+            @include tab{
+                background: url("../images/tablet/products-1-768.png") no-repeat 50%;
+                background-size: contain;
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background: url("../images/tablet/products-1-768@2x.png") no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            background: url("../images/mobile/products-1-320.png") no-repeat 50%;
+            background-size: contain;
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: url("../images/mobile/products-1-320@2x.png") no-repeat 50%;
+                background-size: contain;
+
+            }
+
+        }
     }
     &:nth-child(2){
         background-color: $cardsColorSecond;
-    }
+        &::before{
+            @include desk{
+                background: url("../images/desktop/products-2-1200.png") no-repeat 50%;
+                background-size: contain;
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background: url("../images/desktop/products-2-1200@2x.png") no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            @include tab{
+                background: url("../images/tablet/products-2-768.png") no-repeat 50%;
+                background-size: contain;
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background: url("../images/tablet/products-2-768@2x.png") no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+
+            background: url("../images/mobile/products-2-320.png") no-repeat 50%;
+            background-size: contain;
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: url("../images/mobile/products-2-320@2x.png") no-repeat 50%;
+                background-size: contain;
+            }
+
+
+    }}
     &:last-child{
         background-color: $cardsColorThird;
+        &::before{            
+            @include desk{
+                background: url("../images/desktop/products-3-1200.png") no-repeat 50%;
+                background-size: contain;
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background: url("../images/desktop/products-3-1200@2x.png") no-repeat 50%;
+                    background-size: contain;
+                }
+            }
+            @include tab{
+                background: url("../images/tablet/products-3-768.png") no-repeat 50%;
+                background-size: contain;
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background: url("../images/tablet/products-3-768@2x.png") no-repeat 50%;
+                    background-size: contain;
+                }
+            }            
+            background: url("../images/mobile/products-3-320.png") no-repeat 50%;
+            background-size: contain;
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: url("../images/mobile/products-3-320@2x.png") no-repeat 50%;
+                background-size: contain;
+            }
+        }
     }
 
 
