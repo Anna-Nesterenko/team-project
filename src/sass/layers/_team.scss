@@ -16,25 +16,25 @@
 }
 .team--container {
     width: 300px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 5px;
     background-color: white;
 
     @include mob {
         width: 450px;
-        padding: 30px;
+        padding: 50px;
         border-radius: 10px;
     }
 
     @include tab {
         width: 700px;
-        padding: 40px;
+        padding: 60px;
         border-radius: 20px;
     }
 
     @include desk   {
         width: 1050px;
-        padding: 50px;
+        padding: 70px;
         border-radius: 30px;
     }
 }
@@ -99,13 +99,10 @@
 
 }
 .team__img {
-    width: 80px;
-    height: 80px;
     margin: 0 auto;
     margin-bottom: 10px;
 
     border-radius: 50%;
-
 }
 .team__name {
     margin-bottom: 10px;
