@@ -16,7 +16,7 @@
   height: 100%;
 }
 
-.slider-article {
+.slider__article {
   margin-bottom: 42px;
   @include tab {
     margin-bottom: 47px;
@@ -27,7 +27,7 @@
   text-align: center;
 }
 
-.slider-article__userfoto {
+.slider__picture {
   display: flex;
   justify-content: center;
   border-radius: 50%;
@@ -40,7 +40,7 @@
   }
 }
 
-.slider-article__background {
+.slider__background {
   position: relative;
   width: 280px;
   height: 308px;
@@ -61,7 +61,7 @@
     height: 138px;
   }
 }
-.slider-article__background::before {
+.slider__background::before {
   content: '';
   display: block;
   position: absolute;
@@ -80,7 +80,7 @@
     left: 50px;
   }
 }
-.slider-article__background::after {
+.slider__background::after {
   content: '. . .';
   display: block;
   position: absolute;
@@ -95,7 +95,7 @@
   }
 }
 
-.slider-article__text {
+.slider__text {
   position: relative;
   font-size: 12px;
   line-height: 2.55;
@@ -118,7 +118,7 @@
   }
 }
 
-.slider-article__title {
+.slider__title {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -144,7 +144,9 @@
   background-color: $accentColor;
   background: url(../images/icon-house.svg);
   border-radius: 0;
+  transition: background-color $timingFunction;
 }
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 0;
   margin-right: 18px;
