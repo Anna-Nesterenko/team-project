@@ -122,21 +122,13 @@ justify-content: center;
 }
 
 .products__picture{
-    width: 249px;
+    width: 100%;
     height: auto;
     position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%, -50%);
-
-
-    @include tab{
-        width: 100%;
-max-width: 220px;
-        // @media screen and (max-width: 320px) {
-        //     max-width: 100%;
-        // }    
-}
+flex-grow: 1;
 }
 
 .products__title{
@@ -182,19 +174,19 @@ font-size: 14px;
 line-height: 152%;
 text-align: center;
 letter-spacing: 0.04em;
-padding-bottom: 30px;
+margin-bottom: 30px;
 
 @include tab{
     font-size: 14px;
     line-height: 176%;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 
 }
 
 @include desk{
     font-size: 16px;
     line-height: 176%;    
-    padding-bottom: 62px;
+    margin-bottom: 62px;
 
 }
 }
