@@ -40,28 +40,41 @@
     }
 }
 .team {
+    position: relative;
+    margin: 40px auto;
+
+    @include desk {
     position: absolute;
+    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    }
 }
 .team__close {
     position: absolute;
     top: 18px;
     right: 20px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: none;
     cursor: pointer;
 }
 .team__close-icon {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
+    fill: $palePink;
+
+    transition: fill 250ms $timingFunction, transform 250ms $timingFunction;
+
+    &:hover, &:focus {
+        fill: $accentColor;
+        transform: scale(1.1);
+    }
 }
 .team__title {
     margin-bottom: 25px;
@@ -70,7 +83,7 @@
     line-height: 1.66;
     text-align: center;
     text-transform: uppercase;
-    color: $mainColorText;
+    color: $accentColor;
 }
 .team__list {
     display: flex;
@@ -118,5 +131,5 @@
     font-size: 12px;
     line-height: 1.2;
     text-align: center;
-    color: $mainColorText;
+    color: $secondColorText;
 }
