@@ -10,6 +10,7 @@
 .logo {
   fill: $accentColor;
   @include desk {
+    margin-left: -70px;
     margin-right: 110px;
   }
 }
@@ -89,7 +90,7 @@
   }
 
   @include desk {
-    margin-right: 18px;
+    margin-right: 0;
     margin-left: auto;
     &:hover,
     &:focus {
