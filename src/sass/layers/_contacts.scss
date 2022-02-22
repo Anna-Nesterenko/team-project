@@ -50,6 +50,8 @@
     $accentColorSection 8%
   );
   @include tab {
+    padding-top: 60px;
+    padding-bottom: 158px;
     background-image: linear-gradient(
       to bottom,
       $whiteColorText 14%,
@@ -60,6 +62,8 @@
     );
   }
   @include desk {
+    padding-top: 66px;
+    padding-bottom: 165px;
     background: url('../images/desktop/location-bg.png'),
       linear-gradient(
         to bottom,
