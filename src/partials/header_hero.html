@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="hero__container">
+  <div class="container">
     <header class="page-header">
       <a href="./index.html" class="logo"
         ><svg width="199px" height="50px">
@@ -10,18 +10,18 @@
           <li class="nav__item">
             <a href="./index.html" class="nav__link nav__link--active">Home</a>
           </li>
-          <li class="nav__item"><a href="" class="nav__link">About us</a></li>
-          <li class="nav__item"><a href="" class="nav__link">How it’s made?</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Our products</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">How it’s made?</a></li>
+          <li class="nav__item"><a href="#products" class="nav__link">Our products</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link">Contact</a></li>
         </ul>
       </nav>
-      <button type="button" class="mob-menu__open-btn">
+      <button type="button" class="modal__open-btn" data-modal-open>
         <svg width="22px" height="14px">
           <use href="./images/icons.svg#icon-menu-open"></use>
         </svg>
       </button>
-      <button type="button" class="page-header__btn">
+      <button type="button" class="page-header__btn" data-menu-open>
         Buy now<svg width="10px" height="10px" class="corner-svg">
           <use href="./images/icons.svg#icon-corner"></use>
         </svg>
@@ -30,10 +30,18 @@
     <div class="ice-circle"></div>
 
     <h1 class="title">ice cream<br />made with<br /><span class="title__wrap">passion</span></h1>
-    <div class="hero__wrap-btn">
-      <button type="button" class="hero__btn hero__btn--active">Products</button>
-      <button type="button" class="hero__btn">How it’s made?</button>
-    </div>
+    <ul class="hero__list-btn">
+      <li class="hero__item-btn">
+        <a href="#products">
+          <button type="button" class="hero__btn hero__btn--active">Products</button>
+        </a>
+      </li>
+      <li class="hero__item-btn">
+        <a href="#about">
+          <button type="button" class="hero__btn">How it’s made?</button>
+        </a>
+      </li>
+    </ul>
 
     <picture class="hero__img">
       <source
