@@ -1,14 +1,28 @@
                 .about {
+                    background-image: url(../images/mobile/features-2-320.png);
+                    background-position-x: center;
+                    background-position-y: bottom;
                     background-color: #FFF5F6;
                     padding-top: 125px;
                     padding-bottom: 19px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+                        background-image: url(../images/mobile/features-2-320@2x.png);
+                    }
                     @media screen and (min-width: 768px) {
+                        background-image: none;
                         padding-top: 130px;
                         padding-bottom: 33px;
                     }
                     @media screen and (min-width: 1280px) {
+                        background-image: url(../images/desktop/features-2-1200.png);
+                        // background-size: 1280px;
                         padding-top: 125px;
                         padding-bottom: 19px;
+                        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+                            background-image: url(../images/desktop/features-2-1200@2x.png);
+                        }
                     }
                 }
                 
@@ -57,26 +71,24 @@
                     @media screen and (min-width: 768px) {
                         display: flex;
                     }
-                    //  @media screen and (min-width: 1200px) {
-                    //      background-image: url(images/desktop/features-2-1200.png);
-                    //  }
                 }
                 
                 .about_img {
                     display: block;
                     margin: 0 auto;
-                    @media screen and (min-width: 768px) {
-                        margin-right: 17px;
-                    }
-                    @media screen and (min-width: 1280px) {
-                        margin-right: 74px;
-                    }
                 }
                 
                 .about_img_cow {
                     margin-bottom: 46px;
                     margin-left: auto;
                     margin-right: auto;
+                    @media screen and (min-width: 768px) {
+                        margin-right: 17px;
+                    }
+                    @media screen and (min-width: 1280px) {
+                        margin-right: 74px;
+                        margin-bottom: 0;
+                    }
                 }
                 
                 .about_articles {
@@ -85,8 +97,6 @@
                     margin-right: auto;
                     @media screen and (min-width: 768px) {
                         width: 340px;
-                        padding: 0;
-                        margin-bottom: 62px;
                         margin-left: 0;
                     }
                     @media screen and (min-width: 1280px) {
@@ -142,11 +152,16 @@
                     font-size: 14px;
                     line-height: calc(18 / 14);
                     color: #D41443;
+                    transition: transform 250ms $timingFunction;
                     &:hover,
                     &:focus {
                         background-color: #ECEBEB
                     }
                     @media screen and (min-width: 768px) {
                         margin: 0;
+                    }
+                    @media screen and (min-width: 1280px) {
+                        font-size: 16px;
+                        line-height: calc(21 / 16);
                     }
                 }
