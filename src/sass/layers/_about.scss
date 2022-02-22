@@ -2,6 +2,8 @@
                     background-color: #FFF5F6;
                     padding-top: 125px;
                     padding-bottom: 19px;
+                    background-image: url(../images/desktop/features-2-1200.png);
+                    background-repeat: no-repeat;
                     @media screen and (min-width: 768px) {
                         padding-top: 130px;
                         padding-bottom: 33px;
@@ -57,9 +59,6 @@
                     @media screen and (min-width: 768px) {
                         display: flex;
                     }
-                    //  @media screen and (min-width: 1200px) {
-                    //      background-image: url(images/desktop/features-2-1200.png);
-                    //  }
                 }
                 
                 .about_img {
@@ -86,8 +85,6 @@
                     margin-right: auto;
                     @media screen and (min-width: 768px) {
                         width: 340px;
-                        padding: 0;
-                        margin-bottom: 62px;
                         margin-left: 0;
                     }
                     @media screen and (min-width: 1280px) {
