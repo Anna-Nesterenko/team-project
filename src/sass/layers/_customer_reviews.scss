@@ -144,7 +144,9 @@
   background-color: $accentColor;
   background: url(../images/icon-house.svg);
   border-radius: 0;
+  transition: background-color $timingFunction;
 }
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 0;
   margin-right: 18px;
