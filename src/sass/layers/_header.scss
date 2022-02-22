@@ -9,10 +9,14 @@
 
 .logo {
   fill: $accentColor;
+  @include desk {
+    margin-right: 110px;
+  }
 }
 
 .nav {
   z-index: 2;
+
   @media screen and (max-width: 1279px) {
     display: none;
   }
@@ -64,7 +68,7 @@
   padding: 12px 36px;
   margin-left: 30px;
   z-index: 3;
-  transition-property: background-color;
+  transition-property: background-color, font-size, line-height, margin-left;
   transition-duration: 250ms;
   transition-timing-function: $timingFunction;
   &:hover,
@@ -75,15 +79,38 @@
     display: none;
   }
 
+  @include tab {
+    &:hover,
+    &:focus {
+      font-size: 18px;
+      line-height: 1.3;
+      margin-left: 20px;
+    }
+  }
+
   @include desk {
     margin-right: 18px;
-    margin-left: 0;
+    margin-left: auto;
+    &:hover,
+    &:focus {
+      font-size: 21px;
+      line-height: 1.2;
+      margin-left: auto;
+    }
   }
 }
 
 .corner-svg {
   fill: $accentColor;
   margin-left: 12px;
+  transition-property: width, height;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  .page-header__btn:hover,
+  :focus & {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .mob-menu__open-btn {
@@ -92,6 +119,13 @@
   padding: 0;
   fill: $accentColor;
   z-index: 2;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    fill: $whiteColorText;
+  }
   @include tab {
     margin-left: auto;
   }
