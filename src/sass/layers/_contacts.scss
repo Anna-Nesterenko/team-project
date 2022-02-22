@@ -1,7 +1,9 @@
 .card {
-  width: 100%;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 100%;
   // height: 427px;
-  // width: 220px;
   padding: 43px 21px 43px 20px;
   background-color: $whiteColorText;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -12,14 +14,12 @@
     flex-basis: calc(100% / 3 - 20px);
     margin: 10px;
     width: 220px;
-
     padding: 50px 32px 50px 31px;
-
     // height: 544px;
   }
   @include desk {
-    padding: 51px 44px 62px 43px;
     width: 330px;
+    padding: 51px 44px 62px 43px;
     // height: 572px;
   }
 }
@@ -28,10 +28,12 @@
   margin-bottom: 54px;
   @include tab {
     display: flex;
-    flex-wrap: wrap;
-
+    // flex-wrap: wrap;
     margin: -10px;
     margin-bottom: 81px;
+  }
+  @include desk {
+    margin-bottom: 86px;
   }
 }
 .section-contacts {
@@ -48,6 +50,8 @@
     $accentColorSection 8%
   );
   @include tab {
+    padding-top: 60px;
+    padding-bottom: 158px;
     background-image: linear-gradient(
       to bottom,
       $whiteColorText 14%,
@@ -56,6 +60,22 @@
       $accentColorSection 14%,
       $accentColorSection 14%
     );
+  }
+  @include desk {
+    padding-top: 66px;
+    padding-bottom: 165px;
+    background: url('../images/desktop/location-bg.png'),
+      linear-gradient(
+        to bottom,
+        $whiteColorText 14%,
+        $accentColorSection 14%,
+        $accentColorSection 14%,
+        $accentColorSection 14%,
+        $accentColorSection 14%
+      );
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: center;
   }
 }
 .nav-title {
@@ -202,6 +222,7 @@
   margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
+  transition: background-color 250ms $timingFunction;
   &:hover,
   &:focus {
     background-color: $whiteColorText;
@@ -235,6 +256,7 @@
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+  transition: background-color 250ms $timingFunction;
   &:hover,
   &:focus {
     background-color: $accentColor;

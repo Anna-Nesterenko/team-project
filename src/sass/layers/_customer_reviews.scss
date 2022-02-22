@@ -42,13 +42,12 @@
 
 .slider-article__background {
   position: relative;
-  background: #fafafa;
   width: 280px;
   height: 308px;
   margin: auto;
-  //   z-index: 1;
-  text-align: center;
   padding: 43px 50px 26px;
+  text-align: center;
+  background: #fafafa;
 
   @include tab {
     padding: 47px 60px 34px;
@@ -57,19 +56,35 @@
   }
 
   @include desk {
-    padding: 47px 88px 39px;
+    padding: 47px 65px 39px 65px;
     width: 926px;
     height: 138px;
   }
 }
 .slider-article__background::before {
-  background: url();
+  content: '';
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 40px;
+  top: 28px;
+  left: 61px;
+  background: url(../images/icon-quotes.svg);
+  @include tab {
+    top: 30px;
+    left: 40px;
+  }
+
+  @include desk {
+    top: 32px;
+    left: 50px;
+  }
 }
 .slider-article__background::after {
-  content: '. . . ';
+  content: '. . .';
+  display: block;
   position: absolute;
   width: 100%;
-  display: block;
   bottom: -40px;
   left: 0;
   font-size: 32px;
@@ -82,11 +97,11 @@
 
 .slider-article__text {
   position: relative;
-  text-align: center;
   font-size: 12px;
   line-height: 2.55;
   padding-right: 12px;
   padding-left: 12px;
+  text-align: center;
   background: repeating-linear-gradient(to top, $borderColorGradient 0 1px, transparent 1px 31px);
 
   @include tab {
@@ -96,8 +111,8 @@
     line-height: 2.16;
   }
   @include desk {
-    padding-right: 31px;
-    padding-left: 31px;
+    padding-right: 35px;
+    padding-left: 28px;
     font-size: 16px;
     line-height: 1.86;
   }
@@ -121,18 +136,14 @@
 }
 
 .swiper-pagination-bullet {
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
   height: 12px;
   width: 12px;
-
-  &:first-child {
-    //  background: url();
-  }
 }
 
 .swiper-pagination-bullet-active {
   background-color: $accentColor;
+  background: url(../images/icon-house.svg);
+  border-radius: 0;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 0;
