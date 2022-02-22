@@ -56,12 +56,24 @@
   }
 }
 
-.hero__wrap-btn {
+.hero__list-btn {
   display: flex;
   margin-top: 19px;
   @include desk {
     margin-left: 69px;
     margin-top: 25px;
+  }
+}
+
+.hero__item-btn {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @include desk {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -79,14 +91,14 @@
   min-height: 24px;
   padding-left: 15px;
   padding-right: 15px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
   &:hover,
   &:focus {
-    background: $whiteColorText;
-    color: $accentColor;
+    background-color: #ecebeb;
   }
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+
   @include tab {
     padding-left: 14px;
     padding-right: 14px;
@@ -98,9 +110,6 @@
     line-height: 1.28;
     padding-left: 21px;
     padding-right: 21px;
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
   }
 }
 
@@ -194,19 +203,22 @@
   position: absolute;
   bottom: 7px;
   left: 118px;
-  &:hover,
-  &:focus {
-    width: 25px;
-    height: 25px;
-  }
+  // transition-property: width;
+  // transition-duration: 250ms;
+  // transition-timing-function: $timingFunction;
+  // &:hover,
+  // &:focus {
+  //   width: 25px;
+  //   // height: 25px;
+  // }
   @include desk {
     bottom: 16px;
     left: 214px;
-    &:hover,
-    &:focus {
-      width: 35px;
-      height: 35px;
-    }
+    // &:hover,
+    // &:focus {
+    //   // width: 35px;
+    //   // height: 35px;
+    // }
   }
 }
 
