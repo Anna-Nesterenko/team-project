@@ -3,33 +3,18 @@
     padding-bottom: 49px;
     background-color: $accentColorSection;
 
-    @media screen and (min-width: 768px){
+    @include tab {
         padding-top: 33px;
         padding-bottom: 70px;
     }
-    @media screen and (min-width: 1200px){
+    @include desk {
         padding-top: 20px;
         padding-bottom: 69px;
     }
 }
-.contanier-adv{
-    padding-left: 20px;
-    padding-right: 20px;
-    @media screen and (min-width: 768px){
-        padding-left: 36px;
-        padding-right: 36px;
-    }
-    @media screen and (min-width: 1200px){
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1050px;
-    }
-}
 
 .advantages-item{
-    @media screen and (min-width: 768px){
+    @include tab {
         display:flex;
     }
 }
@@ -38,28 +23,44 @@
     &:not(:last-child){
         margin-bottom: 38px;
     }
-    @media screen and (min-width: 768px){
+    @include tab{
         &:not(:last-child){
             margin-right: 60px;
             margin-bottom: 0;
         }
     }
-    @media screen and (min-width: 1200px){
+    @include desk {
         &:not(:last-child){
             margin-right: 30px;
         }
         // flex-basis: calc(100% / 3 - 60px);
     }
-}
-
-.advantages-icon{
-    fill: $palePink;
-    margin-bottom: 16px;
-    @media screen and (min-width: 768px){
-        margin-bottom: 36px;
+    
+    &::before{
+        display: block;
+        content:"";
+        height: 50px;
+        background-repeat: no-repeat;
+        // fill: $palePink;
+        margin-bottom: 16px;
+        @include tab{
+            margin-bottom: 36px;
+        }
+        @include desk {
+            margin-bottom: 40px;
+        }
     }
-    @media screen and (min-width: 1200px){
-        margin-bottom: 40px;
+
+    &:nth-child(1)::before{
+        background-image: url(../images/icons/icon-milk.png);
+    }   
+    
+    &:nth-child(2)::before{
+        background-image: url(../images/icons/icon-apples.png); 
+    }
+
+    &:nth-child(3)::before{
+        background-image: url(../images/icons/icon-heart.png);
     }
 }
 
@@ -72,12 +73,12 @@
     text-transform: uppercase;
     color: $accentColor;
     margin-bottom: 14px;
-    @media screen and (min-width: 768px){
+    @include tab{
         margin-bottom: 13px;
         font-size: 48px;
         line-height: 1.46;
     }
-    @media screen and (min-width: 1200px){
+    @include desk {
         margin-bottom: 15px;
         font-size: 58px;
         line-height: 1.14;
@@ -92,11 +93,11 @@
     color: $mainColorText;
     ;
       
-    @media screen and (min-width: 768px){
+    @include tab{
         font-size: 14px;
         line-height: 1.74;
     }
-    @media screen and (min-width: 1200px){
+    @include desk {
         font-size: 16px;
         line-height: 1.76;
         letter-spacing: 0.02em;
