@@ -68,11 +68,12 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: box-shadow 250ms $timingFunction;
+  transition: box-shadow fill 250ms $timingFunction;
   &:hover,
   &:focus {
     box-shadow: 0 0 30px $accentColor;
     box-shadow: 0 0 20px $palePink;
+    fill: $iconColor;
   }
 }
 
@@ -115,7 +116,8 @@
 }
 
 .form-input__text {
-  color: $brightPink;
+  color: $whiteColorText;
+  margin-bottom: 3px;
 }
 
 .form-field__select {
