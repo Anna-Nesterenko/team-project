@@ -6,28 +6,34 @@
   background-color: $whiteColorText;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  // &:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
   }
+
   @include tab {
     flex-basis: calc(100% / 3 - 20px);
-    // margin: 10px;
+    margin: 10px;
     width: 220px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+    // &:not(:last-child) {
+    //   margin-right: 20px;
+    // }
 
     padding: 50px 32px 50px 31px;
   }
   @include desk {
-    // margin: 10px;
+    margin: 10px;
     width: 330px;
-    margin-bottom: 0;
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+    // margin-bottom: 0;
+    // &:not(:last-child) {
+    //   margin-right: 20px;
+    // }
+
     padding: 51px 44px 62px 43px;
   }
 }
@@ -36,11 +42,11 @@
   margin-bottom: 54px;
   @include tab {
     display: flex;
-    // margin: -10px;
+    margin: -10px;
     margin-bottom: 81px;
   }
   @include desk {
-    // margin: -10px;
+    margin: -10px;
     margin-bottom: 86px;
   }
 }
@@ -196,11 +202,11 @@
   color: $brightPink;
 
   @include tab {
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
     font-size: 14px;
   }
   @include desk {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     font-size: 16px;
   }
 }
