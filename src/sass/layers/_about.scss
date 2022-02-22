@@ -1,6 +1,7 @@
                 .about {
                     background-image: url(../images/mobile/features-2-320.png);
-                    background-position: bottom 110px left 0px;
+                    background-position-x: center;
+                    background-position-y: bottom;
                     background-color: #FFF5F6;
                     padding-top: 125px;
                     padding-bottom: 19px;
@@ -16,7 +17,7 @@
                     }
                     @media screen and (min-width: 1280px) {
                         background-image: url(../images/desktop/features-2-1200.png);
-                        background-position: bottom 0px left 0px;
+                        // background-size: 1280px;
                         padding-top: 125px;
                         padding-bottom: 19px;
                         @media only screen and (-webkit-min-device-pixel-ratio: 2) {
