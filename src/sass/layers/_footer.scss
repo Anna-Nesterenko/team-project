@@ -5,7 +5,7 @@
   }
 }
 
-.container--footer-flex {
+.container__footer {
   display: block;
   @include tab {
     display: flex;
