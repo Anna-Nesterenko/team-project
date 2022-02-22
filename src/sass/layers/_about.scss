@@ -1,0 +1,172 @@
+.about {
+  background-image: url(../images/mobile/features-2-320.png);
+  background-position-x: center;
+  background-position-y: bottom;
+  background-color: #fff5f6;
+  padding-top: 125px;
+  padding-bottom: 19px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url(../images/mobile/features-2-320@2x.png);
+  }
+  @include tab {
+    background-image: none;
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+  @include desk {
+    background-image: url(../images/desktop/features-2-1200.png);
+    padding-top: 135px;
+    padding-bottom: 19px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url(../images/desktop/features-2-1200@2x.png);
+    }
+  }
+}
+
+.about__text {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  @include tab {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @include desk {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+}
+
+.about__title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 26px;
+  margin-top: 0;
+  @include tab {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 50px;
+  }
+  @include desk {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+  }
+}
+
+.about__wrap {
+  @include tab {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about__picture {
+  display: block;
+  margin: 0 auto;
+
+  &--cow {
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tab {
+      margin-right: 17px;
+    }
+    @include desk {
+      margin-right: 74px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-articles {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  @include tab {
+    width: 340px;
+    margin-left: 0;
+  }
+  @include desk {
+    width: 463px;
+    margin-bottom: 0;
+  }
+}
+
+.about-articles__text {
+  color: #907e82;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  @include tab {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+}
+
+.about-articles__text--black {
+  color: #000000;
+  margin-bottom: 35px;
+  @include desk {
+    font-size: 16px;
+  }
+}
+
+.about-articles__text--item {
+  margin-bottom: 16px;
+  @include tab {
+    margin-bottom: 19px;
+  }
+  @include desk {
+    margin-bottom: 26px;
+  }
+}
+
+.about-articles__text--grey {
+  margin-bottom: 26px;
+  @include tab {
+    margin-bottom: 55px;
+  }
+  @include desk {
+    margin-bottom: 45px;
+  }
+}
+
+.about__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  border-color: transparent;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #d41443;
+  transition: transform 250ms $timingFunction;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(21 / 16);
+  }
+}

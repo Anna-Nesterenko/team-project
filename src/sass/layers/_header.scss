@@ -1,0 +1,136 @@
+.page-header {
+  background-color: $palePink;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+.logo {
+  fill: $accentColor;
+  @include desk {
+    margin-left: -70px;
+    margin-right: 110px;
+  }
+}
+
+.nav {
+  z-index: 2;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.nav__link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  color: $whiteColorText;
+  padding: 14px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.nav__link--active {
+  color: $accentColor;
+}
+
+.page-header__btn {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $accentColor;
+  background: $whiteColorText;
+  border-radius: 22px;
+  border: none;
+  padding: 12px 36px;
+  margin-left: 30px;
+  z-index: 3;
+  transition-property: background-color, font-size, line-height, margin-left;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include tab {
+    &:hover,
+    &:focus {
+      font-size: 18px;
+      line-height: 1.3;
+      margin-left: 22px;
+    }
+  }
+
+  @include desk {
+    margin-right: 0;
+    margin-left: auto;
+    &:hover,
+    &:focus {
+      font-size: 21px;
+      line-height: 1.2;
+      margin-left: auto;
+    }
+  }
+}
+
+.corner-svg {
+  fill: $accentColor;
+  margin-left: 12px;
+  transition-property: width, height;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  .page-header__btn:hover,
+  :focus & {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.modal__open-btn {
+  border: none;
+  background-color: initial;
+  padding: 0;
+  fill: $accentColor;
+  z-index: 2;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    fill: $whiteColorText;
+  }
+  @include tab {
+    margin-left: auto;
+  }
+  @include desk {
+    display: none;
+  }
+}
