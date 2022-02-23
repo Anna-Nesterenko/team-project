@@ -227,13 +227,6 @@
   }
 }
 
-
-
-
-
-
-
-
 .arrow-right__btn {
   display: flex;
   align-items: center;
@@ -270,20 +263,6 @@
   fill: $accentColor;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hero__right-wrap {
   position: absolute;
   bottom: 0;
@@ -303,9 +282,7 @@
   @include desk  {
     margin-bottom: 109px;
   }
-
 }
-
 
 .hero__right-number {
   font-family: Titan One;
