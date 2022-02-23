@@ -1,15 +1,25 @@
 .mob-menu {
-  @media screen and (max-width: 1199px) {
+  position: absolute;
+  top: 0;
+  right: -100%;
+
+  @media screen and (main-width: 300px) {
     width: 250px;
-    min-height: 500px;
-    margin-left: auto;
+    height: 100vh;
+    // transform: translateY(-100%);
     background-color: #e17992;
 
-      &.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
+    opacity: 1;
+
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+  }
+
+  @include desk {
+    display: none;
   }
 }
 .menu-container {
