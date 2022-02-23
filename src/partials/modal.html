@@ -1,113 +1,121 @@
-<div class="backdrop is-open-modal" data-modal>
-    <div class="modal">
-        <button class="button modal-button__close" data-modal-close>
-            <svg width="30" height="30">
-                <use href="./images/icons.svg#icon-modal-close"></use>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="button modal-button__close" data-modal-close>
+      <svg width="30" height="30">
+        <use href="./images/icons.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Enter Order Details</p>
+    <form class="modal-form" action="#">
+      <!-- Возможно нужно будет обернуть во wrapper, первые три инпута -->
+
+      <div class="form-field">
+        <label class="form-input__text" for="Name">Name</label>
+        <div class="form-input__wrappy">
+          <input class="form-input" type="text" name="Name" id="Name" />
+          <svg class="form-input__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-name"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-input__text" for="phone">Phone</label>
+        <div class="form-input__wrappy">
+          <input class="form-input" type="tel" name="phone" id="phone" />
+          <svg class="form-input__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-field">
+        <label class="form-input__text" for="Mail">Mail</label>
+        <div class="form-input__wrappy">
+          <input class="form-input" type="email" name="Почта" id="Mail" />
+          <svg class="form-input__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Возможно нужно будет обернуть во wrapper, следующие три инпута -->
+
+      <div class="form-field">
+        <label class="form-input__text" for="product-name">Product name</label>
+        <div class="form-input__wrappy">
+          <svg class="form-input__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-modal-ice-cream"></use>
+          </svg>
+          <select class="form-field__select" id="product-name" name="product-name">
+            <option value="">Ice cream</option>
+            <option value="">Ice coffee</option>
+            <option value="" selected>Milkshakes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label class="form-input__text" for="size">Size</label>
+        <div class="form-input__wrappy">
+          <svg class="form-input__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-modal-ice-cream"></use>
+          </svg>
+          <select class="form-field__select" id="size" name="size">
+            <option value="xs">Extra Small</option>
+            <option value="s">Small</option>
+            <option value="m" selected>Medium</option>
+            <option value="l">Large</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label class="form-input__text" for="taste">Choose the taste</label>
+        <div class="form-input__wrappy">
+          <svg class="form-input__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-modal-ice-cream"></use>
+          </svg>
+          <select class="form-field__select" id="taste" name="taste">
+            <option value="xs">Vanilla</option>
+            <option value="s">Chocolate</option>
+            <option value="m" selected>Strawberry</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label class="form-input__text">
+          Quantity
+          <input
+            class="form-input__quantity"
+            type="number"
+            name="quantity"
+            min="0"
+            max="999"
+            step="1"
+            value="0"
+          />
+        </label>
+      </div>
+
+      <div class="form-field">
+        <label class="form-input__text">
+          Comment
+          <textarea
+            class="form-field__textarea"
+            width="217"
+            name="feedback"
+            placeholder="Comment to the order"
+          ></textarea>
+        </label>
+
+        <div class="form-field__button">
+          <button class="button submit-button" type="submit">
+            Buy now<svg width="10px" height="10px" class="corner-svg">
+              <use href="./images/icons.svg#icon-corner"></use>
             </svg>
-        </button>
-            <p class="modal-title">Enter Order Details</p>
-            <form class="modal-form" action="#"> 
-<!-- Возможно нужно будет обернуть во wrapper, первые три инпута -->
-
-                    <div class="form-field">
-                        <label class="form-input__text" for="Name">Name</label>
-                        <div class="form-input__wrappy">
-                            <input class="form-input" type="text" name="Name" id="Name" />
-                            <svg class="form-input__icon" width="18" height="18">
-                                <use href="./images/icons.svg#icon-name"></use>
-                            </svg>
-                        </div> 
-                    </div>
-                    <div class="form-field">
-                        <label class="form-input__text" for="phone">Phone</label>
-                        <div class="form-input__wrappy"> 
-                            <input class="form-input" type="tel" name="phone" id="phone" />
-                            <svg class="form-input__icon" width="18" height="18">
-                                <use href="./images/icons.svg#icon-phone"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form-field">
-                        <label class="form-input__text" for="Mail">Mail</label>
-                        <div class="form-input__wrappy"> 
-                            <input class="form-input" type="email" name="Почта" id="Mail" />
-                         <svg class="form-input__icon" width="18" height="18">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg> 
-                        </div>
-                    </div>
-     
-                    <!-- Возможно нужно будет обернуть во wrapper, следующие три инпута -->
-
-                    <div class="form-field">
-                    <label class="form-input__text" for="product-name">Product name</label>
-                    <div class="form-input__wrappy">
-                    <svg class="form-input__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-modal-ice-cream"></use>
-                    </svg>
-                    <select class="form-field__select" id="product-name" name="product-name">
-                        <option value="">Ice cream</option>
-                        <option value="">Ice coffee</option>
-                        <option value="" selected>Milkshakes</option>
-                        </select>
-                        </div>
-                    </div>
-
-
-                    <div class="form-field">
-                    <label class="form-input__text" for="size">Size</label>
-                    <div class="form-input__wrappy">
-                    <svg class="form-input__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-modal-ice-cream"></use>
-                    </svg>
-                    <select class="form-field__select" id="size" name="size">
-                        <option value="xs">Extra Small</option>
-                        <option value="s">Small</option>
-                        <option value="m" selected>Medium</option>
-                        <option value="l">Large</option>
-                    </select>
-                    </div>
-                    </div>
-
-                    <div class="form-field">
-                    <label class="form-input__text" for="taste">Choose the taste</label>
-                    <div class="form-input__wrappy">
-                    <svg class="form-input__icon" width="18" height="18">
-                        <use href="./images/icons.svg#icon-modal-ice-cream"></use>
-                    </svg>
-                    <select class="form-field__select" id="taste" name="taste">
-                        <option value="xs">Vanilla</option>
-                        <option value="s">Chocolate</option>
-                        <option value="m" selected>Strawberry</option>
-                    </select>
-                    </div>
-                    </div>
-
-                    <div class="form-field">
-                    <label class="form-input__text">
-                    Quantity
-                    <input class="form-input__quantity" type="number" name="quantity" min="0" max="999" step="1" value="0" />
-                    </label>
-                    </div>
-
-                    <div class="form-field">
-                    <label class="form-input__text">
-                        Comment
-                        <textarea class="form-field__textarea" width="217" name="feedback" placeholder="Comment to the order"></textarea>
-                    </label>
-
-                    <div class="form-field__button">
-                    <button class="button submit-button" type="submit">Buy now<svg width="10px" height="10px" class="corner-svg">
-                        <use href="./images/icons.svg#icon-corner"></use>
-                    </svg></button>
-                    </div>
-                    </div>
-                    
-
-            </form>
-    </div>
-    </div>
-
-
-
-
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
