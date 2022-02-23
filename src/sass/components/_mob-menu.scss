@@ -1,15 +1,18 @@
 .mob-menu {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
+    position: fixed;
+    right: 0;
+    top: 0%;
     width: 250px;
     min-height: 500px;
-    margin-left: auto;
     background-color: #e17992;
+    transform: translateX(0);
+    transition: transform 250ms linear;
+    z-index: 5;
 
-      &.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
+    &.is-hidden {
+      transform: translateX(100%);
+    }
   }
 }
 .menu-container {
