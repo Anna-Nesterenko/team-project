@@ -16,6 +16,25 @@
     }
   }
 }
+.menu-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #e17992;
+  transition: color $timingFunction;
+
+  &:focus,
+  &:hover {
+    color: $accentColor;
+  }
+}
 .menu-container {
   padding-top: 24px;
 
