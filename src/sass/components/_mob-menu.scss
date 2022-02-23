@@ -1,0 +1,94 @@
+.mob-menu {
+  @media screen and (max-width: 1199px) {
+    width: 250px;
+    min-height: 500px;
+    margin-left: auto;
+    background-color: #e17992;
+
+      &.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+  }
+}
+.menu-container {
+  padding-top: 24px;
+
+  &__block-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 22px;
+
+    &:hover,
+    &:focus {
+      background-color: #d41443;
+    }
+
+    &:hover .menu-container__button,
+    &:focus .menu-container__button {
+      background-color: #d41443;
+      color: #ffffff;
+    }
+    &:hover .menu-container__icon,
+    &:focus .menu-container__icon {
+      fill: #ffffff;
+    }
+  }
+
+  &__button {
+    font-family: DM Sans;
+    font-weight: bold;
+    height: 44px;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    color: #d41443;
+  }
+
+  &__icon {
+    margin-left: 14px;
+    fill: #d41443;
+  }
+}
+.navigation {
+  margin-top: 20px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    height: 42px;
+    border: 1px solid #e18298;
+
+    &:hover .navigation__link,
+    &:focus .navigation__link {
+      color: #d41443;
+    }
+  }
+
+  &__link {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+    &.current {
+      color: #d41443;
+    }
+  }
+}

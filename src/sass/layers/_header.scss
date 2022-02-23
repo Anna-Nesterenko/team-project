@@ -1,10 +1,21 @@
 .page-header {
   background-color: $palePink;
   height: 50px;
+  margin-bottom: 136px;
+  margin-top: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: -1;
+  // z-index: -1;
+
+  @include tab {
+    margin-top: 36px;
+    margin-bottom: 15px;
+  }
+
+  @include desk {
+    margin-bottom: 84px;
+  }
 }
 
 .logo {

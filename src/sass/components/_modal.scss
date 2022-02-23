@@ -1,0 +1,225 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 100vh;
+  transform: translate(-50%, -50%) scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 40px;
+  z-index: 999;
+  opacity: 0.7;
+  background-color: #bb9ca3;
+
+  @media screen and (max-width: 767px) {
+    width: 400px;
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 1;
+  pointer-events: auto;
+
+  &.is-open-modal {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+}
+
+
+
+.modal-button__close {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  background-color: $accentColor;
+  fill: $whiteColorText;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow fill 250ms $timingFunction;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 30px $accentColor;
+    box-shadow: 0 0 20px $palePink;
+    fill: $iconColor;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  width: 210px;
+  font-family: Titan One, cursive;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $accentColor;
+  text-shadow: 0 0 5px #ece2e4, 0 0 10px #ece2e4, 0 0 15px #ece2e4;
+  @include desk {
+    width: 400px;
+  }
+}
+
+.form-input {
+  border-radius: 4px;
+  border: 1px solid $accentColor;
+  width: 100%;
+  padding-left: 26px;
+  padding-right: 2px;
+  color: $accentColor;
+  outline: none;
+}
+
+.form-input__text {
+  color: $whiteColorText;
+  margin-bottom: 3px;
+}
+
+.form-field__select {
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid $accentColor;
+  padding-left: 26px;
+  padding-right: 2px;
+  color: $accentColor;
+  width: 100%;
+}
+
+.submit-button {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $accentColor;
+  background: $whiteColorText;
+  border-radius: 22px;
+  border: none;
+  padding: 12px 36px;
+  margin-left: 30px;
+  z-index: 3;
+  transition-property: background-color, font-size, line-height, margin-left;
+  transition-duration: 250ms;
+  transition-timing-function: $timingFunction;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @include mob {
+    &:hover,
+    &:focus {
+      font-size: 18px;
+      line-height: 1.3;
+      margin-left: 20px;
+    }
+  }
+
+  @include tab {
+    &:hover,
+    &:focus {
+      font-size: 18px;
+      line-height: 1.3;
+      margin-left: 20px;
+    }
+  }
+
+  @include desk {
+    margin-right: 18px;
+    margin-left: auto;
+    &:hover,
+    &:focus {
+      font-size: 21px;
+      line-height: 1.2;
+      margin-left: auto;
+    }
+  }
+}
+
+.form-input__icon {
+  position: absolute;
+  fill: $accentColor;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+}
+
+.form-input__wrappy {
+  position: relative;
+}
+
+.form-input__quantity {
+  border-radius: 4px;
+  border: 1px solid $accentColor;
+  color: $accentColor;
+  outline: none;
+  margin-bottom: 10px;
+  padding-left: 3px;
+}
+
+.form-field__textarea {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid $accentColor;
+  color: $accentColor;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 80px;
+  resize: none;
+  outline: none;
+  margin-bottom: 20px;
+  &::placeholder {
+    color: $accentColor;
+  }
+}
