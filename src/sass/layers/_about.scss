@@ -107,30 +107,37 @@
 
 .about-articles__text {
   color: #907e82;
-  font-weight: 500;
   font-size: 12px;
   line-height: calc(19 / 12);
+  letter-spacing: 0;
   @include tab {
     font-size: 14px;
     line-height: calc(25 / 14);
+  }
+  @include desk {
+    letter-spacing: 0.04em;
   }
 }
 
 .about-articles__text--black {
   color: #000000;
   margin-bottom: 35px;
+  letter-spacing: 0;
   @include desk {
     font-size: 16px;
+    letter-spacing: 0.04em;
   }
 }
 
 .about-articles__text--item {
   margin-bottom: 16px;
+  letter-spacing: 0;
   @include tab {
     margin-bottom: 19px;
   }
   @include desk {
     margin-bottom: 26px;
+    letter-spacing: 0.04em;
   }
 }
 
