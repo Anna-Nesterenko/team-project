@@ -2,10 +2,44 @@
   @media screen and (max-width: 1199px) {
     width: 250px;
     min-height: 500px;
-    margin-left: auto;
     background-color: #e17992;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
+
+.mobile-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-top: 24px;
+  padding-right: 30px;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: $whiteColorText;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+}
+
 .menu-container {
   padding-top: 24px;
 
@@ -15,22 +49,22 @@
     align-items: center;
     cursor: pointer;
     margin: 20px;
-    background-color: #ffffff;
+    background-color: $whiteColorText;
     border-radius: 22px;
 
     &:hover,
     &:focus {
-      background-color: #d41443;
+      background-color: $accentColor;
     }
 
     &:hover .menu-container__button,
     &:focus .menu-container__button {
-      background-color: #d41443;
-      color: #ffffff;
+      background-color: $accentColor;
+      color: $whiteColorText;
     }
     &:hover .menu-container__icon,
     &:focus .menu-container__icon {
-      fill: #ffffff;
+      fill: $whiteColorText;
     }
   }
 
@@ -46,13 +80,13 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-color: #ffffff;
-    color: #d41443;
+    background-color: $whiteColorText;
+    color: $accentColor;
   }
 
   &__icon {
     margin-left: 14px;
-    fill: #d41443;
+    fill: $accentColor;
   }
 }
 .navigation {
@@ -67,7 +101,7 @@
 
     &:hover .navigation__link,
     &:focus .navigation__link {
-      color: #d41443;
+      color: $accentColor;
     }
   }
 
@@ -79,10 +113,10 @@
     line-height: 18px;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: $whiteColorText;
 
     &.current {
-      color: #d41443;
+      color: $accentColor;
     }
   }
 }
