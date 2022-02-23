@@ -164,7 +164,7 @@
   font-size: 14px;
   line-height: calc(18 / 14);
   color: #d41443;
-  transition: transform 250ms $timingFunction;
+  transition: background-color 250ms $timingFunction;
   &:hover,
   &:focus {
     background-color: #ecebeb;
