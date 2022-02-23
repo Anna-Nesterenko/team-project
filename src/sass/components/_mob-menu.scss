@@ -4,6 +4,12 @@
     min-height: 500px;
     margin-left: auto;
     background-color: #e17992;
+
+      &.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
   }
 }
 .menu-container {
