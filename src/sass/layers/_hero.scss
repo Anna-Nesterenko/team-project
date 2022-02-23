@@ -1,23 +1,25 @@
 .hero {
   background-color: $palePink;
-  min-height: 502px;
-  position: relative;
   padding-top: 6px;
   z-index: 1;
+}
+
+.hero__container {
+  position: relative;
+  min-height: 502px;
+
   @include tab {
     min-height: 399px;
-    padding-top: 37px;
   }
+
   @include desk {
     min-height: 665px;
   }
 }
 
-.hero__container {
-  position: relative;
-}
-
-.title {
+.hero__title {
+  width: 218px;
+  margin-bottom: 20px;
   font-family: Titan One;
   font-weight: normal;
   font-size: 26px;
@@ -25,15 +27,17 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $whiteColorText;
-  margin-top: 137px;
   @include tab {
-    margin-top: 15px;
+    width: 162px;
+    margin-bottom: 20px;
     font-size: 22px;
     line-height: 1.13;
+
   }
 
   @include desk {
-    margin-top: 84px;
+    width: 277px;
+    margin-bottom: 25px;
     font-size: 38px;
     line-height: 1.15;
   }
@@ -43,8 +47,9 @@
   color: $accentColor;
   font-size: 47px;
   @include tab {
-    font-size: 35px;
+    font-size: 34px;
     line-height: 0.7;
+
   }
   @include desk {
     font-size: 60px;
@@ -53,9 +58,13 @@
 
 .hero__list-btn {
   display: flex;
-  margin-top: 19px;
+
+  @include tab {
+    margin-bottom: 20px;
+  }
+
   @include desk {
-    margin-top: 25px;
+    margin-bottom: 56px;
   }
 }
 
@@ -124,7 +133,7 @@
   color: $whiteColorText;
   &:hover,
   &:focus {
-    color: $accentColor;
+    background-color: #C7133E;
   }
 }
 
@@ -139,7 +148,7 @@
   -webkit-box-shadow: 0px 1px 0px 149px $brightPink;
   -moz-box-shadow: 0px 1px 0px 149px $brightPink;
   box-shadow: 0px 1px 0px 149px $brightPink;
-  z-index: -1;
+  z-index: 1;
   @include tab {
     top: 41%;
     right: 36%;
@@ -157,7 +166,7 @@
   position: absolute;
   bottom: 0;
   right: 10%;
-  z-index: -1;
+  z-index: 2;
   @include tab {
     width: 143px;
     right: 33%;
@@ -169,76 +178,116 @@
   }
 }
 
-.eco-milk {
-  margin-top: 19px;
-  display: flex;
+.hero__left-wrap {
   position: relative;
-  @include desk {
-    margin-top: 56px;
-    margin-left: -39px;
+  z-index: 3;
+}
+
+.eco-milk {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  left: -40px;
+
+  @include tab {
+    left: 0;
   }
+
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
+.eco-milk__img {
+  @include desk {
+    margin-right: 30px;
+  }
+}
+
+.eco-milk__desc {
+  position: relative;
+  z-index: 1;
+}
+
 .eco-milk__text {
   font-family: DM Sans;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
   color: $whiteColorText;
-  margin-top: 48px;
-  margin-left: -4px;
+
+  @include tab {
+    margin-bottom: 7px;
+  }
   @include desk {
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.4;
-    margin-left: 30px;
+    margin-bottom: 20px;
   }
 }
+
+
+
+
+
+
+
 
 .arrow-right__btn {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   background-color: $whiteColorText;
   border-radius: 50%;
   width: 18px;
   height: 18px;
   border: none;
   padding: 0;
-  position: absolute;
-  bottom: 7px;
-  left: 118px;
-  transition-property: width, height, display, align-items, justify-content;
+  transition-property: background-color, transform, fill;
   transition-duration: 250ms;
   transition-timing-function: $timingFunction;
   &:hover,
   &:focus {
-    width: 23px;
-    height: 23px;
+    transform: scale(1.2);
+    background-color: $accentColor;
+
+    & .eco-milk__icon {
+      fill: $whiteColorText;
+    }
   }
   @include desk {
-    bottom: 16px;
-    left: 214px;
     width: 26px;
     height: 26px;
     &:hover,
     &:focus {
-      width: 35px;
-      height: 35px;
+      transform: scale(1.2);
+    transition: transform 250ms $timingFunction;
     }
   }
 }
 
+.eco-milk__icon {
+  fill: $accentColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero__right-wrap {
   position: absolute;
   bottom: 0;
-  right: 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+  right: 15px;
   z-index: 1;
   @include desk {
   }
@@ -247,40 +296,18 @@
   }
 }
 
-.hero__right-wrap__link {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  &:not(:first-child) {
-    margin-top: 13px;
+.hero__number-conteiner {
+  @include tab {
+    margin-bottom: 72px;
   }
-  @include desk {
-    &:not(:first-child) {
-      margin-top: 18px;
-    }
+  @include desk  {
+    margin-bottom: 109px;
   }
+
 }
 
-.hero__right-wrap__link__16 {
-  width: 43px;
-  height: 44px;
-  @include desk {
-    width: 72px;
-    height: 77px;
-  }
-}
 
-.hero__right-wrap__link__23 {
-  width: 51px;
-  height: 43px;
-  @include desk {
-    width: 92px;
-    height: 76px;
-  }
-}
-
-.hero__right-wrap__number {
+.hero__right-number {
   font-family: Titan One;
   font-size: 28px;
   line-height: 1.14;
@@ -294,12 +321,12 @@
   }
 }
 
-.hero__right-wrap-text {
+.hero__right-text {
   font-family: DM Sans;
   font-weight: normal;
   font-size: 8px;
   line-height: 1.25;
-  text-align: center;
+  text-align: right;
   color: $whiteColorText;
   @include desk {
     font-size: 14px;
@@ -307,24 +334,33 @@
   }
 }
 
-.text-alight--left {
-  text-align: left;
-}
+.hero__right-desc {
+  position: relative;
+  @include tab {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
 
-.text-alight--center {
-  text-align: center;
-}
+    &::after {
+      content: '';
+      position: absolute;
+      right: -5px;
+      top: -3px;
+      z-index: -1;
+      display: block;
+      background-color: $whiteColorText;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+    }
+  }
 
-.hero__white-circle {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.tasty-girl {
-  margin-top: 68px;
   @include desk {
-    margin-top: 109px;
+       &::after {
+      right: -15px;
+      top: -5px;
+      height: 30px;
+      width: 30px;
+    }
   }
 }
