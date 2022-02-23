@@ -16,6 +16,12 @@
   }
 }
 
+.mobile-nav {
+  @include desk {
+    display: none;
+  }
+}
+
 .menu-button {
   position: absolute;
   top: 8px;
