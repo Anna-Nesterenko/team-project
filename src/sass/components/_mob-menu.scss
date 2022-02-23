@@ -4,8 +4,7 @@
     right: 0;
     top: 0%;
     width: 250px;
-    min-height: 500px;
-
+    height: 100vh;
     background-color: #e17992;
     transform: translateX(0);
     transition: transform 250ms linear;
@@ -16,6 +15,7 @@
     }
   }
 }
+
 .menu-button {
   position: absolute;
   top: 8px;
@@ -35,6 +35,11 @@
     color: $accentColor;
   }
 }
+
+.menu-button__closs-icon {
+  fill: $whiteColorText;
+}
+
 .menu-container {
   padding-top: 24px;
 
